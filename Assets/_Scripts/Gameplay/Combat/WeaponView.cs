@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.Serialization;
-using Utils.Extensions;
+// using Utils.Extensions;
 
 namespace Gameplay.Combat
 {
@@ -33,9 +33,9 @@ namespace Gameplay.Combat
             if (!childCollider.isTrigger)
                 return;
 
-            WeaponTriggerRelay relay = childCollider.GetOrAddComponent<WeaponTriggerRelay>();
-            relay.Initialize(this);
-            weapon = new Sword(relay.Col);
+            // WeaponTriggerRelay relay = childCollider.GetOrAddComponent<WeaponTriggerRelay>();
+            // relay.Initialize(this);
+            // weapon = new Sword(relay.Col);
             
         }
 

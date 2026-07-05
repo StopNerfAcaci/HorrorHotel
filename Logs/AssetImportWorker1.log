@@ -6479,3 +6479,511 @@ Memory consumption went from 100.7 MB to 99.4 MB.
 Total: 8.404700 ms (FindLiveObjects: 0.427000 ms CreateObjectMapping: 0.303000 ms MarkObjects: 5.748900 ms  DeleteObjects: 1.924900 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 210.781482 seconds.
+  path: Assets/_Scripts/GameCore/Presentation/Prefab/HomeScreen.prefab
+  artifactKey: Guid(39410544dccbd4747a057fdc8a41fbbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Scripts/GameCore/Presentation/Prefab/HomeScreen.prefab using Guid(39410544dccbd4747a057fdc8a41fbbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '32c94bfdbd53757c2dce55c8e64f239a') in 0.0403787 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 34
+
+========================================================================
+Received Import Request.
+  Time since last request: 36.678617 seconds.
+  path: Assets/NuGet/Editor
+  artifactKey: Guid(b3fad56c531ac5a4db190a745f589a8e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/NuGet/Editor using Guid(b3fad56c531ac5a4db190a745f589a8e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f7c2ec65d8e6b2cc83b59f32c56aca35') in 0.0615906 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/_Scripts/Player/CameraManager.cs
+  artifactKey: Guid(7da6b176b461f3340b7fc70a3b8d6d64) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/Player/CameraManager.cs using Guid(7da6b176b461f3340b7fc70a3b8d6d64) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a25d534fd2272efff6dfbc6c5e99a309') in 0.0473625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/_Scripts/GameCore/Presentation/Shared/ModuleInstaller/RouterModuleInstaller.cs
+  artifactKey: Guid(1aca76bd93924db1a14423dcda0b2728) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/GameCore/Presentation/Shared/ModuleInstaller/RouterModuleInstaller.cs using Guid(1aca76bd93924db1a14423dcda0b2728) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '879c8ff788978f9005dcea7da4baa5f3') in 0.0130044 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/_Scripts/Core/Core.cs
+  artifactKey: Guid(fd377e69f39842b092f3bbbec154d398) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/Core/Core.cs using Guid(fd377e69f39842b092f3bbbec154d398) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9a74afb75b7c6d20718947c80224bd3d') in 0.0137192 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/_Scripts/GameCore/MVP/Modal.cs
+  artifactKey: Guid(1a0ec41967134c1798ffb48ffd8498ba) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/GameCore/MVP/Modal.cs using Guid(1a0ec41967134c1798ffb48ffd8498ba) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '21f04126eb907232c19dc71a3ad51bc5') in 0.0136861 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/_Scripts/GameCore/Navigator/GameNavigatorLauncher.cs
+  artifactKey: Guid(dad84d8d8b6063a439287434e2512354) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/GameCore/Navigator/GameNavigatorLauncher.cs using Guid(dad84d8d8b6063a439287434e2512354) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e713a2d76472b75901feed6739c5ed6b') in 0.0159145 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/_Scripts/Manager/GameManager.cs
+  artifactKey: Guid(56475048555550746b8fe2d034a0815a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/Manager/GameManager.cs using Guid(56475048555550746b8fe2d034a0815a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c193d562cf259f187f7b051c26dfdc05') in 0.0155089 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/_Scripts/Player/PlayerData.cs
+  artifactKey: Guid(8ffc1514b3bc4c45ae1c99fd4b383404) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/Player/PlayerData.cs using Guid(8ffc1514b3bc4c45ae1c99fd4b383404) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a3763e55378dbcc2b8cf879b0b2b7808') in 0.0145423 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/_Scripts/GameCore/MVP/Presenter.cs
+  artifactKey: Guid(3a6b1b5cdcf44aafba278e99a70cf495) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/GameCore/MVP/Presenter.cs using Guid(3a6b1b5cdcf44aafba278e99a70cf495) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dd0cdba9dcd787a93cafac22b45d9528') in 0.0131262 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000096 seconds.
+  path: Assets/_Scripts/GameCore/MVP/IState.cs
+  artifactKey: Guid(87f8f85b760e4a47b7d0344e8cd92e9f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/GameCore/MVP/IState.cs using Guid(87f8f85b760e4a47b7d0344e8cd92e9f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '215151ed573dc2f21fb60263734dcb31') in 0.0129858 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/_Scripts/Gameplay/Effects/ClickAuraPlane.cs
+  artifactKey: Guid(1dd62f26b594c2d4cb7de04e2e754e84) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/Gameplay/Effects/ClickAuraPlane.cs using Guid(1dd62f26b594c2d4cb7de04e2e754e84) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '823ffa99537c41bd76e6aad3db61c762') in 0.0146189 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/_Scripts/Player/InputReader.cs
+  artifactKey: Guid(66099a73fd5dc7e4f8daba22006ae998) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/Player/InputReader.cs using Guid(66099a73fd5dc7e4f8daba22006ae998) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c341ae3701ed83728f1149bbb2d4afd0') in 0.0152744 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/_Scripts/GameCore/Utils/MathExtension.cs
+  artifactKey: Guid(be37935387ac47a9b1fe997b5fb7ec09) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/GameCore/Utils/MathExtension.cs using Guid(be37935387ac47a9b1fe997b5fb7ec09) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bb2acca7e63eddb9d0d0ec98b829d5d2') in 0.0152395 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/_Scripts/GameCore/Utils/GameCore.Util.asmdef
+  artifactKey: Guid(309ffb534c3043c4db96d9e577e14570) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/GameCore/Utils/GameCore.Util.asmdef using Guid(309ffb534c3043c4db96d9e577e14570) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8286a1d244194c28025739edf10eb2a0') in 0.0158012 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/NuGet
+  artifactKey: Guid(dbf134857daf7df428aa31cdd055514f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/NuGet using Guid(dbf134857daf7df428aa31cdd055514f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '23c56496fc467b6ffdc045ae56be4bf7') in 0.0122371 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/_Scripts/Gameplay/Effects
+  artifactKey: Guid(13cde38d1572192498352de8355e4dab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/Gameplay/Effects using Guid(13cde38d1572192498352de8355e4dab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '694ad5aaef69c67365d576a68dabdbdb') in 0.0141821 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/_Scripts/GameCore/Navigator/NoAnim.asset
+  artifactKey: Guid(63082adf3bc36ec4fb6b1ad537d51c21) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/GameCore/Navigator/NoAnim.asset using Guid(63082adf3bc36ec4fb6b1ad537d51c21) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '550bf2009298a28e7e6475731267e4fb') in 0.0486648 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/_Scripts/GameCore/Presentation
+  artifactKey: Guid(bc3e159d24fbb5640b8bc31dc9246078) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/GameCore/Presentation using Guid(bc3e159d24fbb5640b8bc31dc9246078) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5f3f690fd3b26b3364eb0585586c3a36') in 0.0107056 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/_Scripts/GameCore/MVP/SheetPresenter.cs
+  artifactKey: Guid(3cbe4d08800a42708fb411e45f9be5d1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/GameCore/MVP/SheetPresenter.cs using Guid(3cbe4d08800a42708fb411e45f9be5d1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '76d5db9531ae53e66c3789d7ad88cacb') in 0.0129402 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/_Scripts/GameCore/Presentation/MainUI/GameplayViewState.cs
+  artifactKey: Guid(47c259b270a9f514fb2c781e571ffcc8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/GameCore/Presentation/MainUI/GameplayViewState.cs using Guid(47c259b270a9f514fb2c781e571ffcc8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cbcdccc474e920a26c9ac76a23f67d49') in 0.0112718 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/NuGet/Editor/NugetForUnity.dll
+  artifactKey: Guid(8dc1be91775c4bb469f6b74cef450eaa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/NuGet/Editor/NugetForUnity.dll using Guid(8dc1be91775c4bb469f6b74cef450eaa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ee5d629de2ef085340c1792c219a8124') in 0.0219568 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/_Scripts/GameCore/Audio
+  artifactKey: Guid(3277e66b036e53544887132f1411becc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/GameCore/Audio using Guid(3277e66b036e53544887132f1411becc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1855f5c234c95f8fe9c794e5e320a0cc') in 0.0125811 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/_Scripts/Player/StateMachine/StateMachineBuilder.cs
+  artifactKey: Guid(6a688336320541efa8c8936e80bb3bae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/Player/StateMachine/StateMachineBuilder.cs using Guid(6a688336320541efa8c8936e80bb3bae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f85934d8ad204800bad0a6946f458063') in 0.0126705 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/_Scripts/GameCore/Presentation/MainUI/GameplayScreen.cs
+  artifactKey: Guid(46665e69b139d9d44a9ecf27290b511d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/GameCore/Presentation/MainUI/GameplayScreen.cs using Guid(46665e69b139d9d44a9ecf27290b511d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'eb479556d6c2af87b375c7dc709564fc') in 0.0127519 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/NuGet/README.pdf
+  artifactKey: Guid(83c5d2001771f15429a88d67e81366d6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/NuGet/README.pdf using Guid(83c5d2001771f15429a88d67e81366d6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fae8415ac7e8ead8946194e67f78f86c') in 0.0096648 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/_Scripts/GameCore/UnityUIExtensions.cs
+  artifactKey: Guid(262092bd399ddde47a2e93af9aed477c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/GameCore/UnityUIExtensions.cs using Guid(262092bd399ddde47a2e93af9aed477c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b078d389fce58e3570497bb32bf5db83') in 0.0133039 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/_Scripts/Player/StateMachine/StateMachine.cs
+  artifactKey: Guid(fa323cc4d19e4fb78460acc07bde0b59) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/Player/StateMachine/StateMachine.cs using Guid(fa323cc4d19e4fb78460acc07bde0b59) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b3c55f316eff9832fdc8f753bb2c3007') in 0.0122407 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/_Scripts/GameCore/Presentation/Shared/IModuleInstaller.cs
+  artifactKey: Guid(647fa98ee402327439f93c53bb98d149) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/GameCore/Presentation/Shared/IModuleInstaller.cs using Guid(647fa98ee402327439f93c53bb98d149) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '646ca475ad732bf5b1d367a3db1e010a') in 0.012504 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/_Scripts/GameCore/Presentation/Loading/LoadingSubPresenter.cs
+  artifactKey: Guid(32f8dd57f5ed4e6bbc831249e80cb918) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/GameCore/Presentation/Loading/LoadingSubPresenter.cs using Guid(32f8dd57f5ed4e6bbc831249e80cb918) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd0cf6c466ca9bc128a2e50fb795440cb') in 0.0130648 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/_Scripts/Gameplay/Interacts
+  artifactKey: Guid(e327c4c4eaf4785499df0f6d2200bd10) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/Gameplay/Interacts using Guid(e327c4c4eaf4785499df0f6d2200bd10) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0715bd9f4c9308f1d8695ad0313bb07b') in 0.012587 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/_Scripts/GameCore/MVP/AppViewPresenter.cs
+  artifactKey: Guid(263e96491a894bb888c094dc6f41c573) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/GameCore/MVP/AppViewPresenter.cs using Guid(263e96491a894bb888c094dc6f41c573) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cc03574f1990f17b3298e1c03dee324c') in 0.0122522 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/_Scripts/Gameplay/Spawner/SpawnZone.cs
+  artifactKey: Guid(c5ee5d2319c10a1469107f584b7d39f5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/Gameplay/Spawner/SpawnZone.cs using Guid(c5ee5d2319c10a1469107f584b7d39f5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd11f314a808482948efb465a015fb0ae') in 0.0130126 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/_Scripts/Gameplay/Combat
+  artifactKey: Guid(5c328419a96b8bc4cbbe69a5a81223fd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/Gameplay/Combat using Guid(5c328419a96b8bc4cbbe69a5a81223fd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bb3bd50805b8d495b8a1d3306e31a33e') in 0.0134295 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/_Scripts/GameCore/Audio/AudioManagerSO.cs
+  artifactKey: Guid(606e8e27891ed9d4fab178ecfb12cadb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/GameCore/Audio/AudioManagerSO.cs using Guid(606e8e27891ed9d4fab178ecfb12cadb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e9e8772d435c09effc67b4b9a8813696') in 0.0121011 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/_Scripts/Gameplay/Combat/WeaponView.cs
+  artifactKey: Guid(384b089968d5408fb2018d9d15f87110) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/Gameplay/Combat/WeaponView.cs using Guid(384b089968d5408fb2018d9d15f87110) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '14b0e3dd3569b21f244919a3d95d4296') in 0.0130929 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/_Scripts/GameCore/Utils/GameObjectExtension.cs
+  artifactKey: Guid(339b8e2980844b699b342bbb9701ec00) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/GameCore/Utils/GameObjectExtension.cs using Guid(339b8e2980844b699b342bbb9701ec00) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '564e7a60b1defe5478650afce4a5a1ef') in 0.0150626 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/_Scripts/GameCore/Presentation/TransitionService.cs
+  artifactKey: Guid(1b3c14b8e22a141479376757daab6377) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/GameCore/Presentation/TransitionService.cs using Guid(1b3c14b8e22a141479376757daab6377) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '87f04d868fe6b18c091b0481edb5e9b7') in 0.0147055 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/_Scripts/Core/Movement.cs
+  artifactKey: Guid(5c35484db6c7d76428094b012ef7aada) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/Core/Movement.cs using Guid(5c35484db6c7d76428094b012ef7aada) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '61447ab76709fb3aac993a5b06ac9c1e') in 0.0119889 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/_Scripts/GameCore/Navigator/WindowContainerSettings.asset
+  artifactKey: Guid(5d4513242e50baf458333d5b8feefcb2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/GameCore/Navigator/WindowContainerSettings.asset using Guid(5d4513242e50baf458333d5b8feefcb2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'da94dcf6a442d8db8130655904e9bcf5') in 0.0129071 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/_Scripts/GameCore/MVP/ActivityPresenter.cs
+  artifactKey: Guid(823781e7973444c9ac0429fb499d3b7b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/GameCore/MVP/ActivityPresenter.cs using Guid(823781e7973444c9ac0429fb499d3b7b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8041601b7ce49cd7ae6f9317e707d32a') in 0.0125171 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/_Scripts/GameCore/Navigator
+  artifactKey: Guid(3501700bf81bad448ac416d1a68dbfa1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/GameCore/Navigator using Guid(3501700bf81bad448ac416d1a68dbfa1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c309965083b6ff1e540a3fafa138e715') in 0.0138123 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/_Scripts/GameCore/Presentation/Prefab/HomeScreen.prefab
+  artifactKey: Guid(39410544dccbd4747a057fdc8a41fbbd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/GameCore/Presentation/Prefab/HomeScreen.prefab using Guid(39410544dccbd4747a057fdc8a41fbbd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'de94884f7d57dfcff2ccd40503b14319') in 0.0371121 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 34
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/_Scripts/GameCore/MVP/ScreenPresenter.cs
+  artifactKey: Guid(c6e0602577f843c4bc0cc03717446f08) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/GameCore/MVP/ScreenPresenter.cs using Guid(c6e0602577f843c4bc0cc03717446f08) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '135e7f9532047f0b317af0da4310774e') in 0.012749 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/_Scripts/GameCore/Utils/Preconditions.cs
+  artifactKey: Guid(d33cf2dd177b4629a1ab4dd24bcc5e5e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/GameCore/Utils/Preconditions.cs using Guid(d33cf2dd177b4629a1ab4dd24bcc5e5e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6c5eec732130f0ec7c850887c6af8bbf') in 0.0149393 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/_Scripts/Manager/FSM/HomeState.cs
+  artifactKey: Guid(e7a4708c8f1f4edf9b0980c5b3dd6c80) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/Manager/FSM/HomeState.cs using Guid(e7a4708c8f1f4edf9b0980c5b3dd6c80) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a10c4fff2b52ea78fde7c83d06fb9be4') in 0.0139995 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/_Scripts/GameCore/DI/GameLifetimeScope.cs
+  artifactKey: Guid(53dd40dc7b1237743b929fe8c2e3cda9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/GameCore/DI/GameLifetimeScope.cs using Guid(53dd40dc7b1237743b929fe8c2e3cda9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b59180a6fb92bf4235e4567fd78b39be') in 0.0160498 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/_Scripts/GameCore/Navigator/AddressableAssetLoader.asset
+  artifactKey: Guid(541754ed2a3b9d34e840a08d9002def7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/GameCore/Navigator/AddressableAssetLoader.asset using Guid(541754ed2a3b9d34e840a08d9002def7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bcb1f359002f313aae808003fae02ec2') in 0.0144588 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/_Scripts/GameCore/DI/DIExtension.cs
+  artifactKey: Guid(f63d47362685c3744b0aa49dc213de09) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/GameCore/DI/DIExtension.cs using Guid(f63d47362685c3744b0aa49dc213de09) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'acf8a7c644158b339bb54fa188a6ecd0') in 0.0122716 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/_Scripts/GameCore/Utils
+  artifactKey: Guid(5fcf2874e7223124baf8c1a58ee933fc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/GameCore/Utils using Guid(5fcf2874e7223124baf8c1a58ee933fc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b422025d16d891a1df3ead41a4cf5fc7') in 0.0138228 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/_Scripts/GameCore/Presentation/Shared/TransitionService.cs
+  artifactKey: Guid(c315ac966fd3b19478709ee16ae9012a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/GameCore/Presentation/Shared/TransitionService.cs using Guid(c315ac966fd3b19478709ee16ae9012a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0453a9ae7e67dd04ce6fa56c727cab2f') in 0.0128867 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/_Scripts/Player/StateMachine/ISequence.cs
+  artifactKey: Guid(2709ae6c76c643b6812c993f19cf3347) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/Player/StateMachine/ISequence.cs using Guid(2709ae6c76c643b6812c993f19cf3347) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6084776319d258bc27b1b4a4bfc9a011') in 0.0109509 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/_Scripts/Gameplay/Combat/Sword.cs
+  artifactKey: Guid(22912633e60e4c43bb449213b2c6c4ba) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/Gameplay/Combat/Sword.cs using Guid(22912633e60e4c43bb449213b2c6c4ba) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e3b79e75844bd106ee31af3039950b53') in 0.0132938 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/_Scripts/Manager/FSM/LobbyState.cs
+  artifactKey: Guid(da86ad9e6be24d02a8b74f43238d8d06) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/Manager/FSM/LobbyState.cs using Guid(da86ad9e6be24d02a8b74f43238d8d06) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c6f35a9f53bbd6595f70c35e35c5e010') in 0.0118488 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/_Scripts/GameCore/Navigator/UnityScreenNavigatorSettings.asset
+  artifactKey: Guid(4fe3811979aae174d98d6b82e63e3954) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/GameCore/Navigator/UnityScreenNavigatorSettings.asset using Guid(4fe3811979aae174d98d6b82e63e3954) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '61c7c622141e7f9697fd2b4e423a235f') in 0.0362159 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/_Scripts/Manager
+  artifactKey: Guid(0e0c5d074eb428647a69676072fdfda9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/Manager using Guid(0e0c5d074eb428647a69676072fdfda9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '324f74f45d99352873d24c0272a8c7d0') in 0.0111199 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/_Scripts/Manager/HomeManager.cs
+  artifactKey: Guid(e5821e61866b4a1ab785227f80944fcf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/Manager/HomeManager.cs using Guid(e5821e61866b4a1ab785227f80944fcf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c921a2d39f03f608ef28856e2e208772') in 0.0116651 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/_Scripts/Gameplay/Combat/IWeapon.cs
+  artifactKey: Guid(1ba23a40649ecec45998295d9c149f26) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/Gameplay/Combat/IWeapon.cs using Guid(1ba23a40649ecec45998295d9c149f26) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c0288cb12ef58eff455b916bcb2e8bd6') in 0.0129561 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/_Scripts/GameCore
+  artifactKey: Guid(620497cee8095ab49b46f903cb728f25) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/GameCore using Guid(620497cee8095ab49b46f903cb728f25) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9062a34a8e34b2ff3a318b38674b45bd') in 0.0126515 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/_Scripts/Player/StateMachine/TransitionSequencer.cs
+  artifactKey: Guid(b21adecc30684889b0a2a3c9496b84bb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/Player/StateMachine/TransitionSequencer.cs using Guid(b21adecc30684889b0a2a3c9496b84bb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '26f4e8dff537e3328d55120a03869da8') in 0.0109727 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/_Scripts/Manager/FSM/LoseState.cs
+  artifactKey: Guid(5cd3a1e203f8484a9059585b307b02dd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/Manager/FSM/LoseState.cs using Guid(5cd3a1e203f8484a9059585b307b02dd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6d745877054e7daf0c3b3dc178e857a9') in 0.0126706 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/_Scripts/GameCore/MVP/GameMVP.asmdef
+  artifactKey: Guid(8b3073b9c97647f4e9fed9312e7d514b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/GameCore/MVP/GameMVP.asmdef using Guid(8b3073b9c97647f4e9fed9312e7d514b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1020c0f1202c52df698481258a96efbd') in 0.0132677 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/_Scripts/GameCore/Presentation/Shared/ModuleInstaller
+  artifactKey: Guid(f39f07d05bc3e1f4d9ab14447eaab87a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Scripts/GameCore/Presentation/Shared/ModuleInstaller using Guid(f39f07d05bc3e1f4d9ab14447eaab87a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '77636ceaea1bbc8d2a2ad6b5a2b8732d') in 0.0122285 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
