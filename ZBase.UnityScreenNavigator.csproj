@@ -27,7 +27,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\Bin\Debug\ZBase.UnityScreenNavigator\</OutputPath>
-    <DefineConstants>UNITY_6000_3_14;UNITY_6000_3;UNITY_6000;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;UNITY_2023_1_OR_NEWER;UNITY_2023_2_OR_NEWER;UNITY_2023_3_OR_NEWER;UNITY_6000_0_OR_NEWER;UNITY_6000_1_OR_NEWER;UNITY_6000_2_OR_NEWER;UNITY_6000_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_AUDIO_SCRIPTABLE_PIPELINE;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_UNITY_CONSENT;ENABLE_UNITY_CLOUD_IDENTIFIERS;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_MARSHALLING_TESTS;ENABLE_VIDEO;ENABLE_NAVIGATION_OFFMESHLINK_TO_NAVMESHLINK;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_ACCESSIBILITY_SCREEN_READER;TEXTCORE_1_0_OR_NEWER;EDITOR_ONLY_NAVMESH_BUILDER_DEPRECATED;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_AMD;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_CLOUD_SERVICES_ENGINE_DIAGNOSTICS;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;PLATFORM_USES_EXPLICIT_MEMORY_MANAGER_INITIALIZER;PLATFORM_SUPPORTS_WAIT_FOR_PRESENTATION;PLATFORM_SUPPORTS_SPLIT_GRAPHICS_JOBS;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;TEXTCORE_TEXT_ENGINE_1_5_OR_NEWER;TEXTCORE_FONT_ENGINE_1_6_OR_NEWER;UNITASK_DOTWEEN_SUPPORT;DOTWEEN;USN_USE_TIMELINE;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>UNITY_6000_3_14;UNITY_6000_3;UNITY_6000;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;UNITY_2023_1_OR_NEWER;UNITY_2023_2_OR_NEWER;UNITY_2023_3_OR_NEWER;UNITY_6000_0_OR_NEWER;UNITY_6000_1_OR_NEWER;UNITY_6000_2_OR_NEWER;UNITY_6000_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_AUDIO_SCRIPTABLE_PIPELINE;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_UNITY_CONSENT;ENABLE_UNITY_CLOUD_IDENTIFIERS;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_MARSHALLING_TESTS;ENABLE_VIDEO;ENABLE_NAVIGATION_OFFMESHLINK_TO_NAVMESHLINK;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_ACCESSIBILITY_SCREEN_READER;TEXTCORE_1_0_OR_NEWER;EDITOR_ONLY_NAVMESH_BUILDER_DEPRECATED;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_AMD;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_CLOUD_SERVICES_ENGINE_DIAGNOSTICS;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;PLATFORM_USES_EXPLICIT_MEMORY_MANAGER_INITIALIZER;PLATFORM_SUPPORTS_WAIT_FOR_PRESENTATION;PLATFORM_SUPPORTS_SPLIT_GRAPHICS_JOBS;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;TEXTCORE_TEXT_ENGINE_1_5_OR_NEWER;TEXTCORE_FONT_ENGINE_1_6_OR_NEWER;DOTWEEN;UNITASK_DOTWEEN_SUPPORT;USN_USE_TIMELINE;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169,0649</NoWarn>
@@ -52,69 +52,20 @@
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\AssetLoaders\LazyAssetLoader.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Controls\SimpleControlContainer.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\AssetLoaders\ResourcesAssetLoader.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Shared\SimpleTransitionAnimationBehaviour.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Controls\ControlExtensions.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Screens\ScreenTransitionAnimationType.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Shared\WindowContainerType.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Shared\TransitionAnimationBehaviour.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Windows\IWindowContainerManager.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\AssetLoaders\PreloadedAssetLoaderObject.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Windows\IWindowContainer.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Activities\ActivityManager.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Modals\ModalContainer.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\Collections\PooledList.Extended.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Activities\IActivityContainerCallbackReceiver.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\AssetLoaders\IAssetLoader.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\GameObjectExtensions.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Shared\UnityScreenNavigatorSettings.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\AssetLoaders\ResourcesAssetLoaderObject.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\Collections\SystemArray.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Screens\ScreenOptions.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Screens\ScreenContainer.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Windows\IWindow.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Sheets\AnonymousSheetContainerCallbackReceiver.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Modals\ModalOptions.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\AssetLoaders\AssetLoaderObject.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\Animation\IUpdatable.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Activities\AnonymousActivityWindowLifecycleEvent.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Windows\Window.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\Animation\UpdateDispatcher.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Windows\WindowContainerManager.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\AssemblyInfo.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Controls\ControlTransitionAnimationContainer.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Controls\ControlOptions.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\Collections\ThrowHelper.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Views\ITransform.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Activities\ActivityTransitionAnimationContainer.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Modals\ModalBackdrop.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\Stubs\Stubs.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\Collections\PooledList.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Sheets\SheetContainerExtensions.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Shared\UnityScreenNavigatorSettings+CreateMenu.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Shared\AnimationAssetType.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\Animation\IAnimation.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\ShowIfAttribute.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Shared\WindowContainerSettings.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Controls\IControlLifecycleEvent.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Controls\AnonymousControlLifecycleEvent.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\AssetLoaders\LazyAssetLoaderObject.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Modals\AnonymousModalContainerCallbackReceiver.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Windows\WindowContainerBase.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Shared\ITransitionAnimation.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Activities\ActivityOptions.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Views\TransformExtensions.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\AssetLoaders\AddressableAssetLoaderObject.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Shared\SimpleTransitionAnimationObject.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Modals\IModalLifecycleEvent.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Activities\ActivityExtensions.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\AssetLoaders\AssetLoadStatus.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Sheets\SheetContainer.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Modals\ModalExtensions.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Controls\ControlTransitionAnimationType.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Views\IView.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Shared\SimpleTransitionAnimationBehaviour.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Screens\ScreenTransitionAnimationType.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Shared\WindowContainerType.cs" />
-    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Shared\TransitionAnimationBehaviour.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\AssetLoaders\AddressableAssetLoader.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Activities\AnonymousActivityContainerCallbackReceiver.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Activities\ActivityTransitionAnimationType.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\Collections\PooledList.Extended.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Views\View.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Controls\Control.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Screens\ScreenExtensions.cs" />
@@ -122,47 +73,96 @@
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Modals\ModalContainerExtensions.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Views\ViewOptions.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Views\IViewContainer.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Activities\IActivityContainerCallbackReceiver.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\PriorityCollection\UniquePriorityList.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\AssetLoaders\IAssetLoader.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Modals\ModalTransitionAnimationType.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\GameObjectExtensions.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\Animation\AnimationPlayer.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Shared\ViewRef.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Shared\UnityScreenNavigatorSettings.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\AssetLoaders\ResourcesAssetLoaderObject.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Screens\IScreenContainerCallbackReceriver.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Screens\IScreenLifecycleEvent.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\Collections\SystemArray.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Screens\AnonymousScreenLifecycleEvent.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Screens\ScreenOptions.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Screens\ScreenContainer.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Sheets\Sheet.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Windows\IWindow.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Sheets\AnonymousSheetContainerCallbackReceiver.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Shared\WindowContainerConfig.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Modals\ModalOptions.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Shared\Easings.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Shared\MonoBehaviourDestroyedEventDispatcher.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\RectTransformExtensions.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\AssetLoaders\AssetLoaderObject.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\Animation\IUpdatable.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Activities\AnonymousActivityWindowLifecycleEvent.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Windows\Window.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\Animation\UpdateDispatcher.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Windows\WindowContainerManager.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\AssemblyInfo.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Screens\ScreenTransitionAnimationContainer.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\AssetLoaders\KeySourceType.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Shared\SheetAlignment.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Shared\PoolingPolicy.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Shared\TransitionAnimationObject.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Controls\ControlTransitionAnimationContainer.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Controls\ControlOptions.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Launcher\UnityScreenNavigatorLauncher.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\EnabledIfAttribute.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\AssetLoaders\PreloadedAssetLoader.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\Collections\ThrowHelper.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Views\ITransform.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Controls\ISimpleControlContainerCallbackReceiver.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Controls\AnonymousSimpleControlContainerCallbackReceiver.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Activities\ActivityContainer.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Activities\ActivityTransitionAnimationContainer.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Modals\Modal.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\SortingLayerId.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Modals\ModalBackdrop.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\Stubs\Stubs.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Screens\Screen.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\Collections\PooledList.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Sheets\SheetContainerExtensions.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Activities\Activity.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Shared\UnityScreenNavigatorSettings+CreateMenu.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Screens\ScreenContainerExtensions.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Sheets\SheetOptions.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Modals\ModalBackdropTransitionAnimationContainer.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Shared\AnimationAssetType.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\Animation\IAnimation.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\ShowIfAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Shared\WindowContainerSettings.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Controls\IControlLifecycleEvent.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\AssetLoaders\AssetLoadHandle.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Controls\AnonymousControlLifecycleEvent.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\AssetLoaders\LazyAssetLoaderObject.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Controls\ControlContainerBase.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Modals\AnonymousModalContainerCallbackReceiver.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Windows\WindowContainerBase.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Shared\ITransitionAnimation.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Activities\ActivityOptions.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\IInitializable.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Views\TransformExtensions.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Views\IViewGroup.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Sheets\ISheetContainerCallbackReceiver.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Modals\AnonymousModalLifecycleEvent.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\AssetLoaders\AddressableAssetLoaderObject.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Shared\SimpleTransitionAnimationObject.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Modals\IModalLifecycleEvent.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Shared\TimelineTransitionAnimationBehaviour.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Activities\ActivityExtensions.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Foundation\AssetLoaders\AssetLoadStatus.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Sheets\SheetContainer.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Activities\ActivityContainerExtensions.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Activities\IActivityLifecycleEvent.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Modals\ModalExtensions.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Screens\AnonymousScreenContainerCallbackReceiver.cs" />
     <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Views\ViewContainerBase.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Controls\ControlTransitionAnimationType.cs" />
+    <Compile Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\Core\Views\IView.cs" />
     <None Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\Runtime\ZBase.UnityScreenNavigator.asmdef" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\6000.3.14f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
@@ -587,17 +587,17 @@
     <Reference Include="Microsoft.Bcl.TimeProvider">
       <HintPath>D:\Uneetee\HorrorHotel\Assets\Packages\Microsoft.Bcl.TimeProvider.8.0.0\lib\netstandard2.0\Microsoft.Bcl.TimeProvider.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Collections.LowLevel.ILSupport">
-      <HintPath>D:\Uneetee\HorrorHotel\Library\PackageCache\com.unity.collections@12999e356c23\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
-    </Reference>
     <Reference Include="nunit.framework">
       <HintPath>D:\Uneetee\HorrorHotel\Library\PackageCache\com.unity.ext.nunit@d8c07649098d\net40\unity-custom\nunit.framework.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Analytics.Tracker">
+      <HintPath>D:\Uneetee\HorrorHotel\Library\PackageCache\com.unity.analytics@c9d14a6bdec6\Unity.Analytics.Tracker.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Editor">
+      <HintPath>D:\Uneetee\HorrorHotel\Library\PackageCache\com.unity.analytics@c9d14a6bdec6\Unity.Analytics.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces">
       <HintPath>D:\Uneetee\HorrorHotel\Assets\Packages\Microsoft.Bcl.AsyncInterfaces.6.0.0\lib\netstandard2.1\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
-    </Reference>
-    <Reference Include="ReportGeneratorMerged">
-      <HintPath>D:\Uneetee\HorrorHotel\Library\PackageCache\com.unity.testtools.codecoverage@19a841221620\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
       <HintPath>D:\Uneetee\HorrorHotel\Library\PackageCache\com.unity.collab-proxy@0b1559bcd34e\Lib\Editor\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
@@ -632,9 +632,6 @@
     <Reference Include="System.ComponentModel.Annotations">
       <HintPath>D:\Uneetee\HorrorHotel\Assets\Packages\System.ComponentModel.Annotations.5.0.0\lib\netstandard2.1\System.ComponentModel.Annotations.dll</HintPath>
     </Reference>
-    <Reference Include="System.IO.Hashing">
-      <HintPath>D:\Uneetee\HorrorHotel\Library\PackageCache\com.unity.collections@12999e356c23\Unity.Collections.Tests\System.IO.Hashing\System.IO.Hashing.dll</HintPath>
-    </Reference>
     <Reference Include="unityplastic">
       <HintPath>D:\Uneetee\HorrorHotel\Library\PackageCache\com.unity.collab-proxy@0b1559bcd34e\Lib\Editor\unityplastic.dll</HintPath>
     </Reference>
@@ -644,14 +641,17 @@
     <Reference Include="DOTweenPro">
       <HintPath>D:\Uneetee\HorrorHotel\Assets\Plugins\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>D:\Uneetee\HorrorHotel\Library\PackageCache\com.unity.nuget.newtonsoft-json@4dfd81071c64\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>D:\Uneetee\HorrorHotel\Library\PackageCache\com.unity.analytics@c9d14a6bdec6\AnalyticsStandardEvents\Unity.Analytics.StandardEvents.dll</HintPath>
+    </Reference>
     <Reference Include="NuGetForUnity.PluginAPI">
-      <HintPath>D:\Uneetee\HorrorHotel\Library\PackageCache\com.github-glitchenzo.nugetforunity@5e9f9e02b402\Editor\PluginAPI\NuGetForUnity.PluginAPI.dll</HintPath>
+      <HintPath>D:\Uneetee\HorrorHotel\Assets\NuGet\Editor\NuGetForUnity.PluginAPI.dll</HintPath>
     </Reference>
-    <Reference Include="Mono.Cecil">
-      <HintPath>D:\Uneetee\HorrorHotel\Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff\Mono.Cecil.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.CompilerServices.Unsafe">
-      <HintPath>D:\Uneetee\HorrorHotel\Library\PackageCache\com.unity.collections@12999e356c23\Unity.Collections.Tests\System.Runtime.CompilerServices.Unsafe\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    <Reference Include="NugetForUnity">
+      <HintPath>D:\Uneetee\HorrorHotel\Assets\NuGet\Editor\NugetForUnity.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:\Program Files\Unity\Hub\Editor\6000.3.14f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
