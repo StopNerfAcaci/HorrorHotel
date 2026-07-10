@@ -991,10 +991,6 @@
       <Project>{c456d762-937b-f788-6f15-c7e0d09c096c}</Project>
       <Name>Unity.AI.Navigation.Updater</Name>
     </ProjectReference>
-    <ProjectReference Include="Gameplay.Core.csproj">
-      <Project>{add05429-4c52-d118-9552-3772df6652b8}</Project>
-      <Name>Gameplay.Core</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.AI.Navigation.Editor.csproj">
       <Project>{85e33514-117e-644a-67a8-8e08d0b39ee0}</Project>
       <Name>Unity.AI.Navigation.Editor</Name>

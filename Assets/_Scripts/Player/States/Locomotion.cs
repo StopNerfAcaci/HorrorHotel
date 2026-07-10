@@ -20,6 +20,13 @@ namespace HSM
         {
             get => movement ??= core.GetCoreComponent<Movement>();
         }
+        private Interaction _interaction;
+
+        public Interaction Interaction
+        {
+            get => _interaction ?? core.GetCoreComponent<Interaction>();
+        }
+        private bool clickRequested;
 
         protected Vector2 MoveInput => player.Reader.Direction;
 
@@ -31,6 +38,22 @@ namespace HSM
             this.data = data;
         }
 
+        protected override void OnEnter()
+        {
+            clickRequested = false;
+            player.Reader.Cancel += OnCancel;
+
+        }
+
+        protected override void OnExit()
+        {
+            player.Reader.Cancel -= OnCancel;
+        }
+
+        private void OnCancel()
+        {
+            if (Interaction.TryPressed()) clickRequested = true;
+        }
         protected override void PhysicsUpdate(float deltaTime)
         {
             
@@ -64,6 +87,6 @@ namespace HSM
             Movement.SetVelocityXZ(inputDirection, currentSpeed);
         }
 
-        protected override State GetTransition() => player.HasInteractable ? ((PlayerRoot)Parent).AbilityState : null;
+        protected override State GetTransition() => clickRequested ? ((PlayerRoot)Parent).AbilityState : null;
     }
 }

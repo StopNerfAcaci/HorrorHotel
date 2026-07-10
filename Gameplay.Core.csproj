@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="Assets\_Scripts\Core\Core.cs" />
     <Compile Include="Assets\_Scripts\Core\Movement.cs" />
+    <Compile Include="Assets\_Scripts\Core\Interaction.cs" />
     <Compile Include="Assets\_Scripts\Core\GroundChecker.cs" />
     <Compile Include="Assets\_Scripts\Core\CoreComponents.cs" />
     <None Include="Assets\_Scripts\Core\Gameplay.Core.asmdef" />
@@ -958,6 +959,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="GameCore.Util.csproj">
+      <Project>{3bb457b8-9c71-3a44-8228-4d5968ab9f48}</Project>
+      <Name>GameCore.Util</Name>
+    </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{706f2e85-7f52-71a7-7644-de7001893efd}</Project>
       <Name>UnityEditor.UI</Name>

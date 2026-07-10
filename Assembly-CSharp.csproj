@@ -48,6 +48,8 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.3.14f1\Editor\Data\Tools\BuildPipeline\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\_Scripts\Core\Core.cs" />
+    <Compile Include="Assets\_Scripts\Core\Movement.cs" />
     <Compile Include="Assets\_Scripts\GameCore\DI\GameLifetimeScope.cs" />
     <Compile Include="Assets\_Scripts\Manager\GameManager.cs" />
     <Compile Include="Assets\_Scripts\Manager\HomeManager.cs" />
@@ -59,10 +61,12 @@
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualJoystick.cs" />
     <Compile Include="Assets\_Scripts\Gameplay\Inventory\ItemSO.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Presentation\Loading\LoadingActivity.cs" />
+    <Compile Include="Assets\_Scripts\Interacts\IInteractable.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Presentation\MainUI\GameplayModel.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Presentation\MainUI\GameplayScreen.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Navigator\GameNavigatorLauncher.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Presentation\Shared\IModuleInstaller.cs" />
+    <Compile Include="Assets\_Scripts\Core\Interaction.cs" />
     <Compile Include="Assets\_Scripts\Stat\HealthComponent.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerStateDriver.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Presentation\Inventory\InventoryPresenter.cs" />
@@ -72,7 +76,7 @@
     <Compile Include="Assets\_Scripts\Player\States\PlayerRoot.cs" />
     <Compile Include="Assets\GameInput.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Presentation\MainUI\GameplayViewState.cs" />
-    <Compile Include="Assets\_Scripts\Gameplay\Inventory\PlayerInteraction.cs" />
+    <Compile Include="Assets\_Scripts\Core\GroundChecker.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Presentation\NewMonoBehaviourScript.cs" />
     <Compile Include="Assets\_Scripts\Gameplay\Combat\WeaponView.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs" />
@@ -89,6 +93,7 @@
     <Compile Include="Assets\_Scripts\Player\States\AbilityState.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualButton.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Presentation\Inventory\InventoryScreen.cs" />
+    <Compile Include="Assets\_Scripts\Core\CoreComponents.cs" />
     <Compile Include="Assets\_Scripts\Player\States\Locomotion.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Presentation\Loading\LoadingViewState.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Presentation\Loading\LoadingSubPresenter.cs" />
@@ -99,17 +104,17 @@
     <Compile Include="Assets\_Scripts\Player\StateMachine\ISequence.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerData.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Presentation\Inventory\InventoryViewState.cs" />
-    <Compile Include="Assets\_Scripts\Gameplay\Interacts\IInteractable.cs" />
     <Compile Include="Assets\_Scripts\Manager\FSM\WinState.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Presentation\Shared\TransitionService.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Presentation\Home\HomeViewState.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\CanvasInputs\UICanvasControllerInput.cs" />
     <Compile Include="Assets\_Scripts\Gameplay\GlobalEnums\ItemEnums.cs" />
+    <Compile Include="Assets\_Scripts\Player\States\InteractState.cs" />
+    <Compile Include="Assets\_Scripts\Interacts\WorldItem.cs" />
     <Compile Include="Assets\_Scripts\Manager\FSM\HomeState.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Presentation\Home\HomeScreen.cs" />
     <Compile Include="Assets\_Scripts\Player\StateMachine\StateMachineBuilder.cs" />
     <Compile Include="Assets\_Scripts\Player\InputReader.cs" />
-    <Compile Include="Assets\_Scripts\Gameplay\Inventory\WorldItem.cs" />
     <Compile Include="Assets\_Scripts\Manager\FSM\LobbyState.cs" />
     <Compile Include="Assets\_Scripts\Player\States\State.cs" />
     <Compile Include="Assets\_Scripts\Manager\FSM\HomePresenter.cs" />
@@ -118,15 +123,18 @@
     <None Include="Library\PackageCache\com.unity.settings-manager@0b8638c5ce86\package.json" />
     <None Include="Library\PackageCache\com.unity.modules.subsystems\package.json" />
     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@3b809f23691d\package.json" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Library\PackageCache\com.unity.modules.jsonserialize\package.json" />
     <None Include="Library\PackageCache\com.unity.burst@6bb9aca3ef38\package.json" />
     <None Include="Library\PackageCache\com.unity.modules.screencapture\package.json" />
     <None Include="Library\PackageCache\com.unity.modules.cloth\package.json" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Library\PackageCache\com.unity.test-framework.performance@aa81a99c4a75\package.json" />
     <None Include="Library\PackageCache\com.unity.modules.unitywebrequesttexture\package.json" />
     <None Include="Library\PackageCache\com.unity.inputsystem@21a28c3a6c83\package.json" />
     <None Include="Library\PackageCache\com.unity.modules.ai\package.json" />
     <None Include="Library\PackageCache\com.unity.animation.rigging@ae5f251e1ed4\package.json" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile-2-Pass.shader" />
     <None Include="Library\PackageCache\com.unity.collections@12999e356c23\Unity.Collections.LowLevel.ILSupport\README.txt" />
     <None Include="Library\PackageCache\com.unity.inputsystem@21a28c3a6c83\ValidationConfig.json" />
     <None Include="Library\PackageCache\com.unity.ugui@8ccc29d23a79\package.json" />
@@ -140,6 +148,7 @@
     <None Include="Library\PackageCache\com.unity.modules.assetbundle\package.json" />
     <None Include="Library\PackageCache\com.unity.services.analytics@cde4e6cf92f9\package.json" />
     <None Include="Library\PackageCache\com.unity.render-pipelines.core@02dfbe8e43de\Shaders\CoreCopy.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Library\PackageCache\com.unity.splines@9b00833aca09\Shader\Spline.cginc" />
     <None Include="Library\PackageCache\com.unity.modules.imgui\package.json" />
     <None Include="Assets\Packages\Microsoft.Bcl.TimeProvider.8.0.0\lib\netstandard2.0\Microsoft.Bcl.TimeProvider.xml" />
@@ -151,9 +160,11 @@
     <None Include="Library\PackageCache\com.unity.analytics@c9d14a6bdec6\Unity.Analytics.Editor.xml" />
     <None Include="Library\PackageCache\com.unity.modules.accessibility\package.json" />
     <None Include="Library\PackageCache\com.unity.ide.visualstudio@a99d56dec63f\ValidationConfig.json" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Library\PackageCache\com.unity.modules.terrainphysics\package.json" />
     <None Include="Library\PackageCache\com.unity.mathematics@19a9377c4ffa\package.json" />
     <None Include="Library\PackageCache\com.unity.burst@6bb9aca3ef38\ValidationExceptions.json" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Library\PackageCache\com.unity.collab-proxy@0b1559bcd34e\package.json" />
     <None Include="Library\PackageCache\com.autodesk.fbx@90432ec06ab5\package.json" />
     <None Include="Library\PackageCache\com.unity.ugui@8ccc29d23a79\PackageConversionData.json" />
@@ -161,6 +172,7 @@
     <None Include="Library\PackageCache\com.unity.ide.visualstudio@a99d56dec63f\package.json" />
     <None Include="Library\PackageCache\com.unity.render-pipelines.core@02dfbe8e43de\ValidationConfig.json" />
     <None Include="Library\PackageCache\com.unity.render-pipelines.core@02dfbe8e43de\package.json" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\Packages\System.ComponentModel.Annotations.5.0.0\useSharedDesignerContext.txt" />
     <None Include="Library\PackageCache\com.unity.modules.imageconversion\package.json" />
     <None Include="Library\PackageCache\com.unity.shadergraph@28ee1cc75774\package.json" />
@@ -169,6 +181,7 @@
     <None Include="Library\PackageCache\com.unity.ide.rider@4504839d03f7\package.json" />
     <None Include="Library\PackageCache\com.unity.searcher@d45a78918735\package.json" />
     <None Include="Library\PackageCache\com.unity.modules.video\package.json" />
+    <None Include="Assets\TextMesh Pro\Shaders\SDFFunctions.hlsl" />
     <None Include="Library\PackageCache\com.unity.shadergraph@28ee1cc75774\ValidationConfig.json" />
     <None Include="Library\PackageCache\com.unity.ide.rider@4504839d03f7\ValidationExceptions.json" />
     <None Include="Library\PackageCache\com.unity.test-framework@aebcb98460c6\package.json" />
@@ -178,19 +191,27 @@
     <None Include="Library\PackageCache\com.unity.cinemachine@f3f96bcb59af\ValidationExceptions.json" />
     <None Include="Library\PackageCache\com.unity.modules.physics2d\package.json" />
     <None Include="Library\PackageCache\com.unity.services.core@8ba50f624741\ValidationExceptions.json" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Library\PackageCache\com.unity.modules.vr\package.json" />
     <None Include="Library\PackageCache\com.unity.services.core@8ba50f624741\package.json" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Library\PackageCache\com.unity.services.analytics@cde4e6cf92f9\ValidationExceptions.json" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
     <None Include="Library\PackageCache\com.unity.modules.vectorgraphics\package.json" />
     <None Include="Library\PackageCache\com.unity.ide.visualstudio@a99d56dec63f\ValidationExceptions.json" />
     <None Include="Library\PackageCache\com.unity.nuget.newtonsoft-json@4dfd81071c64\link.xml" />
     <None Include="Assets\Packages\Microsoft.Bcl.AsyncInterfaces.6.0.0\lib\netstandard2.1\Microsoft.Bcl.AsyncInterfaces.xml" />
     <None Include="Assets\StarterAssets\license.txt" />
     <None Include="Library\PackageCache\com.unity.modules.wind\package.json" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Library\PackageCache\com.unity.modules.umbra\package.json" />
     <None Include="Library\PackageCache\com.unity.nuget.newtonsoft-json@4dfd81071c64\package.json" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Library\PackageCache\com.unity.cinemachine@f3f96bcb59af\license.txt" />
     <None Include="Assets\Packages\R3.1.3.1\lib\netstandard2.1\R3.xml" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Library\PackageCache\com.unity.inputsystem@21a28c3a6c83\ValidationExceptions.json" />
     <None Include="Library\PackageCache\com.unity.modules.audio\package.json" />
     <None Include="Library\PackageCache\com.unity.modules.physics\package.json" />
@@ -199,6 +220,7 @@
     <None Include="Library\PackageCache\com.unity.cinemachine@f3f96bcb59af\package.json" />
     <None Include="Library\PackageCache\com.unity.shadergraph@28ee1cc75774\GraphTemplates\Cross Pipeline\GetSceneNormal.hlsl" />
     <None Include="Library\PackageCache\com.unity.modules.unitywebrequestwww\package.json" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Library\PackageCache\com.unity.modules.unitywebrequestaudio\package.json" />
     <None Include="Library\PackageCache\com.unity.modules.hierarchycore\package.json" />
     <None Include="Library\PackageCache\com.cysharp.r3@b95751a30ad5\package.json" />
@@ -219,27 +241,34 @@
     <None Include="Assets\Packages\System.ComponentModel.Annotations.5.0.0\lib\netstandard2.1\System.ComponentModel.Annotations.xml" />
     <None Include="Library\PackageCache\com.unity.ugui@8ccc29d23a79\Editor Resources\Shaders\TMP_SDF Internal Editor.shader" />
     <None Include="Library\PackageCache\com.unity.analytics@c9d14a6bdec6\Unity.Analytics.StandardEvents.xml" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Library\PackageCache\com.unity.formats.fbx@9f10493e557a\package.json" />
     <None Include="Library\PackageCache\com.unity.modules.director\package.json" />
     <None Include="Library\PackageCache\com.unity.modules.terrain\package.json" />
     <None Include="Library\PackageCache\com.unity.2d.sprite@d14b9d497a24\package.json" />
     <None Include="Library\PackageCache\com.unity.collections@12999e356c23\package.json" />
     <None Include="Library\PackageCache\com.unity.modules.androidjni\package.json" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Library\PackageCache\jp.hadashikick.vcontainer@c1460d42dff7\package.json" />
     <None Include="Library\PackageCache\com.unity.ugui@8ccc29d23a79\PackageConversionData_Assets.json" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Library\PackageCache\com.unity.mathematics@19a9377c4ffa\ValidationExceptions.json" />
+    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Library\PackageCache\com.unity.modules.animation\package.json" />
     <None Include="Assets\Resources\BillingMode.json" />
     <None Include="Library\PackageCache\com.unity.nuget.newtonsoft-json@4dfd81071c64\Runtime\Newtonsoft.Json.xml" />
     <None Include="Library\PackageCache\com.unity.collections@12999e356c23\pvpExceptions.json" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Library\PackageCache\com.unity.burst@6bb9aca3ef38\Unity.Burst.Unsafe.xml" />
     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@3b809f23691d\ValidationConfig.json" />
     <None Include="Library\PackageCache\com.unity.modules.unitywebrequest\package.json" />
     <None Include="Library\PackageCache\com.unity.modules.uielements\package.json" />
     <None Include="Library\PackageCache\com.unity.collections@12999e356c23\ValidationExceptions.json" />
     <None Include="Library\PackageCache\com.unity.splines@9b00833aca09\package.json" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne.json" />
     <None Include="Library\PackageCache\com.autodesk.fbx@90432ec06ab5\ValidationExceptions.json" />
     <None Include="Library\PackageCache\com.unity.modules.ui\package.json" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
     <None Include="Library\PackageCache\com.unity.multiplayer.center@f01f4ba8d00a\package.json" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\6000.3.14f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
@@ -1161,10 +1190,6 @@
     <ProjectReference Include="Unity.AI.Navigation.Updater.csproj">
       <Project>{c456d762-937b-f788-6f15-c7e0d09c096c}</Project>
       <Name>Unity.AI.Navigation.Updater</Name>
-    </ProjectReference>
-    <ProjectReference Include="Gameplay.Core.csproj">
-      <Project>{add05429-4c52-d118-9552-3772df6652b8}</Project>
-      <Name>Gameplay.Core</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.AI.Navigation.Editor.csproj">
       <Project>{85e33514-117e-644a-67a8-8e08d0b39ee0}</Project>

@@ -11,11 +11,7 @@ namespace Gameplay.CoreSystem
         public bool CanSetVelocity { get; set; }
         public Vector3 CurrentVelocity { get; private set; }
         private Transform rootTransform;
-
-        private Vector3 currentTargetRot;
-        private Vector3 timeToReachTargetRot;
-        private float dampedRotateVelocity;
-        private float dampedRotateVelocityPassedTime;
+        
         private float _verticalVelocity;
 
         #endregion
@@ -37,7 +33,6 @@ namespace Gameplay.CoreSystem
             CanSetVelocity = true;
             prevPosition = rootTransform.position;
 
-            timeToReachTargetRot.y = .14f;
         }
 
         public override void LogicUpdate()

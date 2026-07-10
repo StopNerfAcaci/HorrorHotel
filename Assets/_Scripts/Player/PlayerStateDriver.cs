@@ -20,12 +20,12 @@ namespace HSM
         private State root;
         private string lastPath;
 
-        private IInteractable interactable;
         public InputReader Reader => inputReader;
         public PlayerData Data => data;
         private bool isBusy = false;
         public bool IsBusy => isBusy;
-        public bool HasInteractable => interactable != null;
+        public bool HasInteractable { get; set; }
+
         private void Awake()
         {
             SetupComponents();
@@ -80,8 +80,6 @@ namespace HSM
 
         private void SetupComponents()
         {
-            var interact = GetComponent<PlayerInteraction>();
-            interact.Initialize(this);
             // animator = GetComponentInChildren<Animator>();
         }
 
@@ -116,10 +114,6 @@ namespace HSM
         }
 
         internal void SetBusy(bool busy) => isBusy = busy;
-
-        public void SetItem(WorldItem item)
-        {
-            interactable = item;
-        }
+        
     }
 }

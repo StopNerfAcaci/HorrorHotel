@@ -17,7 +17,6 @@ public class InputReader : ScriptableObject, GameInput.IPlayerActions
     // add a dedicated "Cancel" action to your Input Actions asset instead
     // (bind it to Escape / right-click) and route it here the same way.
     public event UnityAction Cancel = delegate { };
-    public event UnityAction Hold = delegate { };
     public event UnityAction<Vector2> Pointed = delegate { };
     
     GameInput inputAction;
@@ -54,18 +53,20 @@ public class InputReader : ScriptableObject, GameInput.IPlayerActions
         Look?.Invoke(context.ReadValue<Vector2>(), IsDeviceMouse(context));
     }
 
+    public bool IsHolding { get; private set; }
+
     public void OnClick(InputAction.CallbackContext context)
     {
         if (context.phase == InputActionPhase.Started)
         {
             Cancel.Invoke();
+            IsHolding = true;
         }
-        if (context.phase == InputActionPhase.Performed)
+        else if (context.phase == InputActionPhase.Canceled)
         {
-            Hold?.Invoke();
+            IsHolding = false;
         }
     }
-
     public void OnAttack(InputAction.CallbackContext context)
     {
         if (context.phase == InputActionPhase.Started)

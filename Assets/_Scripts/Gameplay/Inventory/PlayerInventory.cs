@@ -4,15 +4,16 @@ using UnityEngine;
 
 namespace Gameplay.Inventory
 {
+    [Serializable]
+    public class InventoryEntry
+    {
+        public ItemSO item;
+        public int quantity;
+    }
     public class PlayerInventory
     {
         private List<InventoryEntry> entries;
-        [Serializable]
-        public class InventoryEntry
-        {
-            public ItemSO item;
-            public int quantity;
-        }
+
 
         public PlayerInventory(List<InventoryEntry> entries)
         {
