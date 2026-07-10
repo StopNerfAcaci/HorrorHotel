@@ -81,6 +81,7 @@ namespace GameCore.Presentation.Shared
             _modalContainer.Push<TView>(options);
             return tcs.Task;
         }
+
         private async UniTask<T> ShowScreenPresenterAsync<T, TView, TState>(string key, Func<TView, T> createFunc,
             bool isStack = true, bool isPooling = false)
             where T : ScreenPresenter<TView, TState>
@@ -139,10 +140,20 @@ namespace GameCore.Presentation.Shared
                     await _loadingContainer.HideAsync("LoadingScreen");
                     return null;
                 }
-        
+
                 return null;
             }
         }
+
+        public async UniTask<InventoryPresenter> ShowInventoryUI()
+        {
+            var presenter = await ShowScreenPresenterAsync<InventoryPresenter, InventoryScreen, InventoryViewState>(
+                "InventoryScreen",
+                screen => new InventoryPresenter(screen), false, true);
+            
+            return presenter;
+        }
+
         public async UniTask<GameplayPresenter> ShowGamePlayScreen()
         {
             // isPooling = true: keep GamePlayScreen GameObject alive across level transitions so its

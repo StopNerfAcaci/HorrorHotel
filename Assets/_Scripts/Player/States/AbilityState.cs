@@ -1,4 +1,6 @@
 ﻿using Gameplay.Combat;
+using Gameplay.CoreSystem;
+using Gameplay.Inventory;
 using Utils.Commons;
 using Utils.Helpers;
 
@@ -6,84 +8,73 @@ namespace HSM
 {
     public class AbilityState : State
     {
-        private readonly AttackState AttackState;
         private readonly PlayerStateDriver player;
-        private readonly WeaponView _weaponView;
-        
+        private readonly InteractState InteractState;
         protected bool isAbilityDone = true;
 
-        public AbilityState(StateMachine machine, State parent, PlayerStateDriver player) : base(
-            machine, parent)
+                
+        private Movement movement;
+        
+        public Movement Movement
+        {
+            get => movement ??= core.GetCoreComponent<Movement>();
+        }
+        public AbilityState(StateMachine machine, State parent, PlayerStateDriver player) : base(machine, parent)
         {
             this.player = player;
-            // AttackState = new AttackState(machine, this, player, player.WeaponView);
-            
+            core = player.Core;
+            InteractState = new InteractState(machine, this, player);
         }
 
         protected override void OnEnter()
         {
             isAbilityDone = false;
+            Movement.SetVelocityZero();
         }
-        
-        protected override State GetInitialState() => AttackState;
+
+        protected override State GetInitialState() => InteractState;
         protected override State GetTransition() => isAbilityDone ? ((PlayerRoot)Parent).Locomotion : null;
-        
-        internal void SetDone(bool isDone) => isAbilityDone = isDone;
     }
 
-    public class AttackState : State
+    public class InteractState : State
     {
         private readonly PlayerStateDriver player;
-        private readonly WeaponView _weaponView;
-        
-        private bool hasEnteredAttackAnimation;
-        public AttackState(StateMachine machine, State parent, PlayerStateDriver player, WeaponView weaponView) : base(machine, parent)
+        private readonly PlayerInventory inventory;
+        private bool isAbilityDone;
+
+        public InteractState(StateMachine machine, State parent, PlayerStateDriver player) : base(machine, parent)
         {
             this.player = player;
-            _weaponView = weaponView;
-            weaponView.Initialize();
+            var interact = player.GetComponent<PlayerInteraction>();
+            inventory = interact.Inventory;
+            inventory.OnItemAdded += HandleItemAdded;
+        }
+
+        public override void Dispose()
+        {
+            base.Dispose();
+            inventory.OnItemAdded -= HandleItemAdded;
+        }
+
+        private void HandleItemAdded(ItemSO item, int amount)
+        {
+            isAbilityDone = true;
         }
 
         protected override void OnEnter()
         {
-            hasEnteredAttackAnimation = false;
-            // player.Animator.CrossFadeInFixedTime(Constants.AttackHash, 0.1f);
-            _weaponView.Enter();
+            UnityEngine.Debug.Log("Interact Enter");
+            player.SetBusy(true);
         }
 
         protected override void OnExit()
         {
-            _weaponView.Exit();
+            player.SetBusy(false);
         }
 
-        // protected override void OnUpdate(float deltaTime)
-        // {
-        //     if (player.Animator == null || !player.Animator.runtimeAnimatorController)
-        //     {
-        //         ((AbilityState)Parent).SetDone(true);
-        //         return;
-        //     }
-        //
-        //     if (player.Animator.IsInTransition(0))
-        //         return;
-        //
-        //     var stateInfo = player.Animator.GetCurrentAnimatorStateInfo(0);
-        //     if (stateInfo.shortNameHash != Constants.AttackHash)
-        //         return;
-        //
-        //     hasEnteredAttackAnimation = true;
-        //
-        //     if (hasEnteredAttackAnimation && stateInfo.normalizedTime >= 1f)
-        //         ((AbilityState)Parent).SetDone(true);
-        // }
-    }
-
-    public class RollState : State
-    {
-        private readonly PlayerStateDriver player;
-        public RollState(StateMachine machine, State parent, PlayerStateDriver player) : base(machine, parent)
+        protected override State GetTransition()
         {
-            this.player = player;
+            return isAbilityDone ? ((PlayerRoot)Parent.Parent).Locomotion : null;
         }
     }
 }
