@@ -2,6 +2,7 @@ using System;
 using Cysharp.Threading.Tasks;
 using GameCore.Presentation;
 using GameCore.Presentation.Shared;
+using HSM;
 using Managers.FSM;
 using UnityEngine;
 using VContainer;
@@ -14,25 +15,21 @@ namespace Managers
     {
         public event Action ActionStartGame;
 
-        private ICommandPublisher _publisher;
-        private TransitionService _transitionService;
-        private IObjectResolver _resolver;
-        public GameFSM GameFSM { get; set; }
+        public StateMachine GameSM { get; set; }
         private GameplayPresenter _gamePlayPresenter;
 
         private bool _hasTriggeredStartGameFlow;
         private bool _allowGameplayTimer;
         private bool hasStarted;
 
+        private State gameRoot;
         public bool IsGameplayTimerAllowed => _allowGameplayTimer;
 
-        [Inject]
-        public void Construct(ICommandPublisher publisher, TransitionService transitionService,
-            IObjectResolver resolver)
+        private void Awake()
         {
-            _publisher = publisher;
-            _transitionService = transitionService;
-            _resolver = resolver;
+            gameRoot = new GameRoot(null, this);
+            var builder = new StateMachineBuilder(gameRoot);
+            GameSM = builder.Build();
         }
 
         private void Start()

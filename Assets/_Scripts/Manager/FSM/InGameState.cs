@@ -16,7 +16,7 @@ namespace Managers.FSM
         public int StarCount;
     }
 
-    public class IngameState : GameState
+    public class IngameState
     {
         private GameManager _gameManager;
         private readonly ICommandPublisher _publisher;
@@ -41,7 +41,7 @@ namespace Managers.FSM
             _transitionService = transitionService;
         }
 
-        public override void OnEnter()
+        public void OnEnter()
         {
             OnEnterAsync().Forget();
         }
@@ -75,26 +75,9 @@ namespace Managers.FSM
         {
             _gamePlayPresenter.StartLevel().Forget();
         }
-
-        public override void OnUpdate()
-        {
-            base.OnUpdate();
-// #if UNITY_EDITOR
-//             if (Input.GetKeyDown(KeyCode.W))
-//             {
-//                 _publisher.PublishAsync(new ChangeGameStateCommand(StateType.Win));
-//             }
-//             else if (Input.GetKeyDown(KeyCode.L))
-//             {
-//                 _publisher.PublishAsync(new ChangeGameStateCommand(StateType.Lose));
-//             }
-// #endif
-        }
-
-        public override void OnExit()
+        public void OnExit()
         {
             Debug.Log($"CHECK LOSE: EXIT INGAME STATE");
-            base.OnExit();
             StopListening();
         }
 
