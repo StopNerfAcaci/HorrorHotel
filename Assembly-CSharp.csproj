@@ -50,15 +50,12 @@
   <ItemGroup>
     <Compile Include="Assets\_Scripts\Core\Core.cs" />
     <Compile Include="Assets\_Scripts\Core\Movement.cs" />
-    <Compile Include="Assets\_Scripts\GameCore\DI\GameLifetimeScope.cs" />
     <Compile Include="Assets\_Scripts\Manager\GameManager.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualTouchZone.cs" />
-    <Compile Include="Assets\_Scripts\GameCore\DI\AppLifetimeScope.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Audio\AudioManagerSO.cs" />
     <Compile Include="Assets\_Scripts\Gameplay\Spawner\SpawnZone.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Presentation\TransitionService.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Presentation\ObjectPreview\PreviewPresenter.cs" />
-    <Compile Include="Assets\_Scripts\Manager\GameRoot.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualJoystick.cs" />
     <Compile Include="Assets\_Scripts\Gameplay\Inventory\ItemSO.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Presentation\Loading\LoadingActivity.cs" />
@@ -66,8 +63,6 @@
     <Compile Include="Assets\_Scripts\GameCore\Presentation\ObjectPreview\PreviewViewState.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Presentation\MainUI\GameplayModel.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Presentation\MainUI\GameplayScreen.cs" />
-    <Compile Include="Assets\_Scripts\Manager\InGameState.cs" />
-    <Compile Include="Assets\_Scripts\GameCore\Navigator\GameNavigatorLauncher.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Presentation\Shared\IModuleInstaller.cs" />
     <Compile Include="Assets\_Scripts\Core\Interaction.cs" />
     <Compile Include="Assets\_Scripts\Stat\HealthComponent.cs" />
@@ -75,7 +70,6 @@
     <Compile Include="Assets\_Scripts\GameCore\Presentation\Inventory\InventoryPresenter.cs" />
     <Compile Include="Assets\_Scripts\Gameplay\Effects\ClickAuraPlane.cs" />
     <Compile Include="Assets\_Scripts\Player\StateMachine\StateMachine.cs" />
-    <Compile Include="Assets\_Scripts\Manager\FSM\LoseState.cs" />
     <Compile Include="Assets\_Scripts\Player\States\PlayerRoot.cs" />
     <Compile Include="Assets\GameInput.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Presentation\MainUI\GameplayViewState.cs" />
@@ -85,11 +79,9 @@
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs" />
     <Compile Include="Assets\_Scripts\Player\StateMachine\TransitionSequencer.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Presentation\Shared\ModuleInstaller\RouterModuleInstaller.cs" />
-    <Compile Include="Assets\_Scripts\Manager\FSM\InGameState.cs" />
     <Compile Include="Assets\_Scripts\Gameplay\Combat\WeaponTriggerRelay.cs" />
     <Compile Include="Assets\StarterAssets\FirstPersonController\Scripts\FirstPersonController.cs" />
     <Compile Include="Assets\_Scripts\Gameplay\Combat\Sword.cs" />
-    <Compile Include="Assets\_Scripts\GameCore\DI\DIExtension.cs" />
     <Compile Include="Assets\_Scripts\GameCore\UnityUIExtensions.cs" />
     <Compile Include="Assets\_Scripts\Player\StateMachine\Activities.cs" />
     <Compile Include="Assets\_Scripts\Gameplay\Combat\IWeapon.cs" />
@@ -106,7 +98,6 @@
     <Compile Include="Assets\_Scripts\Player\StateMachine\ISequence.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerData.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Presentation\Inventory\InventoryViewState.cs" />
-    <Compile Include="Assets\_Scripts\Manager\FSM\WinState.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Presentation\Shared\TransitionService.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Presentation\Home\HomeViewState.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\CanvasInputs\UICanvasControllerInput.cs" />
@@ -118,7 +109,6 @@
     <Compile Include="Assets\_Scripts\GameCore\Presentation\ObjectPreview\PreviewModal.cs" />
     <Compile Include="Assets\_Scripts\Player\InputReader.cs" />
     <Compile Include="Assets\_Scripts\Player\States\State.cs" />
-    <Compile Include="Assets\_Scripts\Manager\FSM\HomePresenter.cs" />
     <Compile Include="Assets\StarterAssets\InputSystem\StarterAssetsInputs.cs" />
     <None Include="Library\PackageCache\com.unity.ai.navigation@734c2c4c5591\ValidationExceptions.json" />
     <None Include="Library\PackageCache\com.unity.settings-manager@0b8638c5ce86\package.json" />
@@ -1196,6 +1186,10 @@
       <Project>{85e33514-117e-644a-67a8-8e08d0b39ee0}</Project>
       <Name>Unity.AI.Navigation.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.Formats.Fbx.Runtime.csproj">
+      <Project>{4417ae2e-338a-2da9-6ce5-6e18bb01053d}</Project>
+      <Name>Unity.Formats.Fbx.Runtime</Name>
+    </ProjectReference>
     <ProjectReference Include="GameMVP.csproj">
       <Project>{60d28719-c55d-9426-f47d-013318db3888}</Project>
       <Name>GameMVP</Name>
@@ -1208,25 +1202,21 @@
       <Project>{c970052d-bad1-b6c5-db43-c1e58f28340a}</Project>
       <Name>Unity.RenderPipelines.Core.Runtime.Shared</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Formats.Fbx.Runtime.csproj">
-      <Project>{4417ae2e-338a-2da9-6ce5-6e18bb01053d}</Project>
-      <Name>Unity.Formats.Fbx.Runtime</Name>
+    <ProjectReference Include="PPv2URPConverters.csproj">
+      <Project>{5fa089b4-f41d-b37a-23b0-eb674e90cbaf}</Project>
+      <Name>PPv2URPConverters</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Universal.2D.Runtime.csproj">
       <Project>{b26b4ee4-a8ea-99e3-6659-3ceb6a05eda6}</Project>
       <Name>Unity.RenderPipelines.Universal.2D.Runtime</Name>
     </ProjectReference>
-    <ProjectReference Include="R3.Unity.TextMeshPro.csproj">
-      <Project>{30699a4c-c203-da9c-b432-c0a20920c2f7}</Project>
-      <Name>R3.Unity.TextMeshPro</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.Searcher.Editor.csproj">
       <Project>{035b1900-1690-3993-8230-13a2a99e6924}</Project>
       <Name>Unity.Searcher.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="PPv2URPConverters.csproj">
-      <Project>{5fa089b4-f41d-b37a-23b0-eb674e90cbaf}</Project>
-      <Name>PPv2URPConverters</Name>
+    <ProjectReference Include="R3.Unity.TextMeshPro.csproj">
+      <Project>{30699a4c-c203-da9c-b432-c0a20920c2f7}</Project>
+      <Name>R3.Unity.TextMeshPro</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
       <Project>{157b89ef-c756-76a1-a20d-4ca428838809}</Project>

@@ -7,7 +7,7 @@ namespace MVP
 {
     public abstract class ModalPresenter<TModal, TViewState> : Presenter<TModal>, IModalLifecycleEvent
         where TModal : Modal<TViewState>
-        where TViewState : new()
+        where TViewState : ViewState, new()
     {
         public TModal View { get; }
 

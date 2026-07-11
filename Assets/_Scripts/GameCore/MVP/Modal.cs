@@ -4,7 +4,7 @@ using ZBase.UnityScreenNavigator.Core.Modals;
 
 namespace MVP
 {
-    public abstract class Modal<TViewState> : Modal, IState<TViewState>
+    public abstract class Modal<TViewState> : Modal, IState<TViewState> where TViewState: ViewState
     {
         private TViewState _state;
 

@@ -1051,6 +1051,10 @@
       <Project>{85e33514-117e-644a-67a8-8e08d0b39ee0}</Project>
       <Name>Unity.AI.Navigation.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.Formats.Fbx.Runtime.csproj">
+      <Project>{4417ae2e-338a-2da9-6ce5-6e18bb01053d}</Project>
+      <Name>Unity.Formats.Fbx.Runtime</Name>
+    </ProjectReference>
     <ProjectReference Include="GameMVP.csproj">
       <Project>{60d28719-c55d-9426-f47d-013318db3888}</Project>
       <Name>GameMVP</Name>
@@ -1063,25 +1067,21 @@
       <Project>{c970052d-bad1-b6c5-db43-c1e58f28340a}</Project>
       <Name>Unity.RenderPipelines.Core.Runtime.Shared</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Formats.Fbx.Runtime.csproj">
-      <Project>{4417ae2e-338a-2da9-6ce5-6e18bb01053d}</Project>
-      <Name>Unity.Formats.Fbx.Runtime</Name>
+    <ProjectReference Include="PPv2URPConverters.csproj">
+      <Project>{5fa089b4-f41d-b37a-23b0-eb674e90cbaf}</Project>
+      <Name>PPv2URPConverters</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Universal.2D.Runtime.csproj">
       <Project>{b26b4ee4-a8ea-99e3-6659-3ceb6a05eda6}</Project>
       <Name>Unity.RenderPipelines.Universal.2D.Runtime</Name>
     </ProjectReference>
-    <ProjectReference Include="R3.Unity.TextMeshPro.csproj">
-      <Project>{30699a4c-c203-da9c-b432-c0a20920c2f7}</Project>
-      <Name>R3.Unity.TextMeshPro</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.Searcher.Editor.csproj">
       <Project>{035b1900-1690-3993-8230-13a2a99e6924}</Project>
       <Name>Unity.Searcher.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="PPv2URPConverters.csproj">
-      <Project>{5fa089b4-f41d-b37a-23b0-eb674e90cbaf}</Project>
-      <Name>PPv2URPConverters</Name>
+    <ProjectReference Include="R3.Unity.TextMeshPro.csproj">
+      <Project>{30699a4c-c203-da9c-b432-c0a20920c2f7}</Project>
+      <Name>R3.Unity.TextMeshPro</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
       <Project>{157b89ef-c756-76a1-a20d-4ca428838809}</Project>

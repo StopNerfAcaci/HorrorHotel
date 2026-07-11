@@ -3,10 +3,7 @@ using Cysharp.Threading.Tasks;
 using GameCore.Presentation;
 using GameCore.Presentation.Shared;
 using HSM;
-using Managers.FSM;
 using UnityEngine;
-using VContainer;
-using VitalRouter;
 
 namespace Managers
 {
@@ -27,9 +24,9 @@ namespace Managers
 
         private void Awake()
         {
-            gameRoot = new GameRoot(null, this);
-            var builder = new StateMachineBuilder(gameRoot);
-            GameSM = builder.Build();
+            // gameRoot = new GameRoot(null, this);
+            // var builder = new StateMachineBuilder(gameRoot);
+            // GameSM = builder.Build();
         }
 
         private void Start()
