@@ -358,7 +358,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 43.2
+    y: 0
     width: 1536
     height: 36
   m_SerializedDataModeController:
@@ -741,7 +741,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 79.200005
+    y: 24
     width: 247
     height: 450
   m_SerializedDataModeController:
@@ -760,8 +760,7 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs:
-      - m_Data: 39922
+      m_SelectedIDs: []
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
@@ -933,8 +932,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Package Manager\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 248
-    y: 79.200005
+    x: 249
+    y: 24
     width: 707.6
     height: 450
   m_SerializedDataModeController:
@@ -971,8 +970,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Scene\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 957.60004
-    y: 79.200005
+    x: 958.6
+    y: 24
     width: 214
     height: 450
   m_SerializedDataModeController:
@@ -1767,7 +1766,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 555.2
+    y: 500
     width: 1172.6
     height: 214.79999
   m_SerializedDataModeController:
@@ -1818,20 +1817,17 @@ MonoBehaviour:
       m_Data: 51906
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 51720
-    - m_Data: 51722
-    - m_Data: 51724
-    - m_Data: 51726
-    - m_Data: 51728
-    - m_Data: 51730
-    - m_Data: 51732
-    - m_Data: 51734
-    - m_Data: 51736
-    - m_Data: 51738
-    - m_Data: 51740
-    - m_Data: 51904
-    - m_Data: 1000000000
-    - m_Data: 2147483647
+    - m_Data: 51698
+    - m_Data: 51700
+    - m_Data: 51702
+    - m_Data: 51704
+    - m_Data: 51706
+    - m_Data: 51708
+    - m_Data: 51710
+    - m_Data: 51712
+    - m_Data: 51714
+    - m_Data: 51716
+    - m_Data: 51718
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1864,17 +1860,17 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 51720
-    - m_Data: 51722
-    - m_Data: 51724
-    - m_Data: 51726
-    - m_Data: 51728
-    - m_Data: 51730
-    - m_Data: 51732
-    - m_Data: 51734
-    - m_Data: 51736
-    - m_Data: 51738
-    - m_Data: 51740
+    - m_Data: 51698
+    - m_Data: 51700
+    - m_Data: 51702
+    - m_Data: 51704
+    - m_Data: 51706
+    - m_Data: 51708
+    - m_Data: 51710
+    - m_Data: 51712
+    - m_Data: 51714
+    - m_Data: 51716
+    - m_Data: 51718
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2098,8 +2094,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1173.6
-    y: 79.200005
+    x: 1174.6
+    y: 24
     width: 361.40002
     height: 690.8
   m_SerializedDataModeController:

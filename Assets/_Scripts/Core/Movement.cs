@@ -53,18 +53,6 @@ namespace Gameplay.CoreSystem
             SetFinalVelocity(velocity);
         }
 
-        public void SetVelocityY(float value)
-        {
-            _verticalVelocity = value;
-            if (_verticalVelocity < 0)
-            {
-                _verticalVelocity = -2;
-            }
-
-            Vector3 velocity = new Vector3(CurrentVelocity.x, value, CurrentVelocity.z);
-            SetFinalVelocity(velocity);
-        }
-
         private void SetFinalVelocity(Vector3 velocity)
         {
             CurrentVelocity = velocity;
