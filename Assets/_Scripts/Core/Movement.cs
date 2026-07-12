@@ -39,9 +39,20 @@ namespace Gameplay.CoreSystem
         {
             if (_controller == null) return;
 
-            CurrentVelocity = _controller.velocity;
+            ApplyGravity();
+            CurrentVelocity = new Vector3( _controller.velocity.x, _verticalVelocity, _controller.velocity.z );
         }
-
+        private void ApplyGravity()
+        {
+            if (_controller.isGrounded)
+            {
+                _verticalVelocity = -2f;
+            }
+            else
+            {
+                _verticalVelocity += Physics.gravity.y * Time.deltaTime;
+            }
+        }
         public void SetVelocityZero()
         {
             SetFinalVelocity(Vector3.zero);

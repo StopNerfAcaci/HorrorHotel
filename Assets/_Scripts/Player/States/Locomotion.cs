@@ -59,7 +59,6 @@ namespace HSM
         }
         protected override void PhysicsUpdate(float deltaTime)
         {
-            
             targetSpeed = player.GetSpeed();
             if (MoveInput == Vector2.zero) targetSpeed = 0.0f;
             Vector3 horizontalVelocity = new Vector3(Movement.CurrentVelocity.x, 0.0f, Movement.CurrentVelocity.z);
@@ -90,11 +89,17 @@ namespace HSM
             Movement.SetVelocityXZ(inputDirection, currentSpeed);
         }
 
+<<<<<<< Updated upstream
         protected override State GetTransition()
         {
             if (!clickRequested) return null;
             ((PlayerRoot)Parent).PendingItem = pendingItem;
             return ((PlayerRoot)Parent).AbilityState;
         }
+=======
+
+
+        protected override State GetTransition() => clickRequested ? ((PlayerRoot)Parent).AbilityState : null;
+>>>>>>> Stashed changes
     }
 }
