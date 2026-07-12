@@ -102,10 +102,6 @@
     <Compile Include="Assets\_Scripts\GameCore\Presentation\ObjectPreview\PreviewModal.cs" />
     <Compile Include="Assets\_Scripts\Player\InputReader.cs" />
     <Compile Include="Assets\_Scripts\Player\States\State.cs" />
-<<<<<<< Updated upstream
-=======
-    <Compile Include="Assets\StarterAssets\InputSystem\StarterAssetsInputs.cs" />
->>>>>>> Stashed changes
     <None Include="Library\PackageCache\com.unity.ai.navigation@734c2c4c5591\ValidationExceptions.json" />
     <None Include="Library\PackageCache\com.unity.settings-manager@0b8638c5ce86\package.json" />
     <None Include="Library\PackageCache\com.unity.modules.subsystems\package.json" />
@@ -147,25 +143,16 @@
     <None Include="Library\PackageCache\com.unity.analytics@c9d14a6bdec6\Unity.Analytics.Editor.xml" />
     <None Include="Library\PackageCache\com.unity.modules.accessibility\package.json" />
     <None Include="Library\PackageCache\com.unity.ide.visualstudio@a99d56dec63f\ValidationConfig.json" />
-<<<<<<< Updated upstream
     <None Include="Library\PackageCache\com.unity.addressables@8460f1c9c927\ValidationExceptions.json" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Library\PackageCache\com.unity.modules.terrainphysics\package.json" />
     <None Include="Library\PackageCache\com.unity.mathematics@19a9377c4ffa\package.json" />
     <None Include="Library\PackageCache\com.unity.scriptablebuildpipeline@36e3b5898ee2\package.json" />
-=======
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
-    <None Include="Library\PackageCache\com.unity.modules.terrainphysics\package.json" />
-    <None Include="Library\PackageCache\com.unity.mathematics@19a9377c4ffa\package.json" />
->>>>>>> Stashed changes
     <None Include="Library\PackageCache\com.unity.burst@6bb9aca3ef38\ValidationExceptions.json" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Library\PackageCache\com.unity.collab-proxy@0b1559bcd34e\package.json" />
     <None Include="Library\PackageCache\com.autodesk.fbx@90432ec06ab5\package.json" />
-<<<<<<< Updated upstream
     <None Include="Library\PackageCache\com.unity.addressables@8460f1c9c927\package.json" />
-=======
->>>>>>> Stashed changes
     <None Include="Library\PackageCache\com.unity.ugui@8ccc29d23a79\PackageConversionData.json" />
     <None Include="Library\PackageCache\com.unity.modules.unitywebrequestassetbundle\package.json" />
     <None Include="Library\PackageCache\com.unity.ide.visualstudio@a99d56dec63f\package.json" />
@@ -201,10 +188,6 @@
     <None Include="Library\PackageCache\com.unity.ide.visualstudio@a99d56dec63f\ValidationExceptions.json" />
     <None Include="Library\PackageCache\com.unity.nuget.newtonsoft-json@4dfd81071c64\link.xml" />
     <None Include="Assets\Packages\Microsoft.Bcl.AsyncInterfaces.6.0.0\lib\netstandard2.1\Microsoft.Bcl.AsyncInterfaces.xml" />
-<<<<<<< Updated upstream
-=======
-    <None Include="Assets\StarterAssets\license.txt" />
->>>>>>> Stashed changes
     <None Include="Library\PackageCache\com.unity.modules.wind\package.json" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
@@ -232,10 +215,7 @@
     <None Include="Library\PackageCache\com.unity.shadergraph@28ee1cc75774\GraphTemplates\Subgraphs\CanvasLinearSpaceConversion.hlsl" />
     <None Include="Library\PackageCache\com.unity.ai.navigation@734c2c4c5591\package.json" />
     <None Include="Library\PackageCache\com.unity.modules.xr\package.json" />
-<<<<<<< Updated upstream
     <None Include="Library\PackageCache\com.unity.profiling.core@8a49f7027d06\package.json" />
-=======
->>>>>>> Stashed changes
     <None Include="Library\PackageCache\com.unity.ugui@8ccc29d23a79\Editor Resources\Shaders\TMP_Properties.cginc" />
     <None Include="Library\PackageCache\com.unity.modules.adaptiveperformance\package.json" />
     <None Include="Library\PackageCache\com.unity.feature.characters-animation@62cc2ae02a69\package.json" />
@@ -1181,13 +1161,10 @@
       <Project>{d14c00c1-a8b6-9d50-bb05-5b4eb3aac2fc}</Project>
       <Name>Unity.RenderPipelines.Core.ShaderLibrary</Name>
     </ProjectReference>
-<<<<<<< Updated upstream
     <ProjectReference Include="Unity.ScriptableBuildPipeline.csproj">
       <Project>{afe98ee2-ba36-3b1d-685b-3a7119558508}</Project>
       <Name>Unity.ScriptableBuildPipeline</Name>
     </ProjectReference>
-=======
->>>>>>> Stashed changes
     <ProjectReference Include="Unity.Splines.Editor.csproj">
       <Project>{ea7f31ba-66cd-dbc3-bfea-6268fceff460}</Project>
       <Name>Unity.Splines.Editor</Name>
@@ -1228,13 +1205,10 @@
       <Project>{c970052d-bad1-b6c5-db43-c1e58f28340a}</Project>
       <Name>Unity.RenderPipelines.Core.Runtime.Shared</Name>
     </ProjectReference>
-<<<<<<< Updated upstream
     <ProjectReference Include="Unity.Addressables.csproj">
       <Project>{b3819c79-2fb7-c767-f81a-0204408acee4}</Project>
       <Name>Unity.Addressables</Name>
     </ProjectReference>
-=======
->>>>>>> Stashed changes
     <ProjectReference Include="Unity.RenderPipelines.Universal.2D.Runtime.csproj">
       <Project>{b26b4ee4-a8ea-99e3-6659-3ceb6a05eda6}</Project>
       <Name>Unity.RenderPipelines.Universal.2D.Runtime</Name>
@@ -1243,13 +1217,10 @@
       <Project>{30699a4c-c203-da9c-b432-c0a20920c2f7}</Project>
       <Name>R3.Unity.TextMeshPro</Name>
     </ProjectReference>
-<<<<<<< Updated upstream
     <ProjectReference Include="Unity.ScriptableBuildPipeline.Editor.csproj">
       <Project>{77a6db99-9367-812b-083c-3521693ffb98}</Project>
       <Name>Unity.ScriptableBuildPipeline.Editor</Name>
     </ProjectReference>
-=======
->>>>>>> Stashed changes
     <ProjectReference Include="PPv2URPConverters.csproj">
       <Project>{5fa089b4-f41d-b37a-23b0-eb674e90cbaf}</Project>
       <Name>PPv2URPConverters</Name>
@@ -1350,13 +1321,10 @@
       <Project>{e4518fa1-4e76-c286-d41c-1540bb61388c}</Project>
       <Name>UnityEngine.XR.LegacyInputHelpers</Name>
     </ProjectReference>
-<<<<<<< Updated upstream
     <ProjectReference Include="Unity.ResourceManager.csproj">
       <Project>{505e8536-bc99-f63f-b631-821fc80e622b}</Project>
       <Name>Unity.ResourceManager</Name>
     </ProjectReference>
-=======
->>>>>>> Stashed changes
     <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
       <Project>{7e884dfa-ac04-932b-1884-eb650b27b5e3}</Project>
       <Name>Unity.VisualStudio.Editor</Name>
@@ -1381,13 +1349,10 @@
       <Project>{b7a2e387-103b-366b-dd21-d03631f4219a}</Project>
       <Name>Unity.Collections</Name>
     </ProjectReference>
-<<<<<<< Updated upstream
     <ProjectReference Include="Unity.Profiling.Core.csproj">
       <Project>{fbafc042-5709-c695-d389-863633c4c51b}</Project>
       <Name>Unity.Profiling.Core</Name>
     </ProjectReference>
-=======
->>>>>>> Stashed changes
     <ProjectReference Include="Unity.InputSystem.ForUI.csproj">
       <Project>{31ae4d26-c5c0-c67e-e303-668d69c0651c}</Project>
       <Name>Unity.InputSystem.ForUI</Name>
@@ -1492,7 +1457,6 @@
       <Project>{e477110d-b751-e059-cbef-8f1c8c96e7b2}</Project>
       <Name>Unity.Splines</Name>
     </ProjectReference>
-<<<<<<< Updated upstream
     <ProjectReference Include="Unity.Addressables.Editor.csproj">
       <Project>{b9a3fb5d-3e1c-5f7f-c5bd-f6e477dd343a}</Project>
       <Name>Unity.Addressables.Editor</Name>
@@ -1501,8 +1465,6 @@
       <Project>{f23ce854-8896-c7b1-f789-e8ce9d23b5c2}</Project>
       <Name>Unity.AutoGroupGenerator.Editor</Name>
     </ProjectReference>
-=======
->>>>>>> Stashed changes
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{706f2e85-7f52-71a7-7644-de7001893efd}</Project>
       <Name>UnityEditor.UI</Name>

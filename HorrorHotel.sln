@@ -31,11 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.RenderPipelines.Core.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEngine.UI", "UnityEngine.UI.csproj", "{4ccce542-c873-832c-fa46-20cd3f66dbaf}"
 EndProject
-<<<<<<< Updated upstream
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Addressables.Editor", "Unity.Addressables.Editor.csproj", "{b9a3fb5d-3e1c-5f7f-c5bd-f6e477dd343a}"
 EndProject
-=======
->>>>>>> Stashed changes
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Collections", "Unity.Collections.csproj", "{b7a2e387-103b-366b-dd21-d03631f4219a}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Splines", "Unity.Splines.csproj", "{e477110d-b751-e059-cbef-8f1c8c96e7b2}"
@@ -371,11 +368,8 @@ Global
 		{9b217150-5f2a-38cf-69a8-68fc506ea649}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4ccce542-c873-832c-fa46-20cd3f66dbaf}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4ccce542-c873-832c-fa46-20cd3f66dbaf}.Debug|Any CPU.Build.0 = Debug|Any CPU
-<<<<<<< Updated upstream
 		{b9a3fb5d-3e1c-5f7f-c5bd-f6e477dd343a}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{b9a3fb5d-3e1c-5f7f-c5bd-f6e477dd343a}.Debug|Any CPU.Build.0 = Debug|Any CPU
-=======
->>>>>>> Stashed changes
 		{b7a2e387-103b-366b-dd21-d03631f4219a}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{b7a2e387-103b-366b-dd21-d03631f4219a}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{e477110d-b751-e059-cbef-8f1c8c96e7b2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
