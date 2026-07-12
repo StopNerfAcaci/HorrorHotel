@@ -13,7 +13,6 @@ public class Interaction : CoreComponents
     [Header("Hold / Inspect")] [SerializeField]
     private Vector3 holdLocalOffset = new Vector3(0f, 0f, 1.2f);
 
-    public event Action<WorldItem> ItemPickedUp;
     private WorldItem _hoveredItem;
     
 
@@ -59,12 +58,13 @@ public class Interaction : CoreComponents
         item.transform.SetParent(playerCamera.transform, worldPositionStays: false);
         item.transform.localPosition = holdLocalOffset;
         item.transform.localRotation = Quaternion.identity;
-        ItemPickedUp?.Invoke(item);
+        
         _hoveredItem = null;
     }
 
-    public bool TryPressed()
+    public bool TryPressed(out WorldItem item)
     {
+        item = _hoveredItem;
         if (_hoveredItem == null) return false;
         BeginInspect(_hoveredItem);
         return true;

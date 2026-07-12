@@ -1,4 +1,5 @@
-﻿using Cysharp.Threading.Tasks;
+﻿using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
 using DG.Tweening;
 using Gameplay.Inventory;
 using UnityEngine;
@@ -16,22 +17,14 @@ namespace HSM
         private float _pitch;
 
         private WorldItem _heldItem;
-
-
         private Vector2 prevPos;
 
         public InteractState(StateMachine machine, State parent, PlayerStateDriver player) : base(machine, parent)
         {
             this.player = player;
             Inventory = new PlayerInventory.Builder().Build();
-            Interact.ItemPickedUp += HandleItemPickedUp;
         }
 
-        public override void Dispose()
-        {
-            base.Dispose();
-            Interact.ItemPickedUp -= HandleItemPickedUp;
-        }
 
 
         protected override void OnEnter()
@@ -39,6 +32,17 @@ namespace HSM
             player.Reader.Interact += OnInteract;
             player.Reader.Pointed += GetLastPoint;
             player.SetBusy(true);
+            var root = (PlayerRoot)Parent.Parent;
+            _heldItem = root.PendingItem;
+            root.PendingItem = null;
+            ShowPreviewAsync().Forget();
+        }
+
+        private async UniTask ShowPreviewAsync()
+        {
+            var transition = ((PlayerRoot)Parent.Parent).TransitionService;
+            var preview = await transition.ShowPreviewModal();
+            preview.ItemPreviewCommand.Execute(_heldItem.itemData);
         }
 
         protected override void OnExit()
@@ -47,12 +51,6 @@ namespace HSM
             player.Reader.Pointed -= GetLastPoint;
             player.SetBusy(false);
         }
-
-        private void HandleItemPickedUp(WorldItem item)
-        {
-            _heldItem = item;
-        }
-
         private void GetLastPoint(Vector2 pos)
         {
             prevPos = pos;

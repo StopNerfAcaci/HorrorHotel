@@ -6,8 +6,6 @@ namespace GameCore.Presentation.Shared
 {
     public partial class TransitionService
     {
-
-
         public async UniTask<PreviewPresenter> ShowPreviewModal()
         {
             var presenter = await ShowModalPresenterAsync<PreviewPresenter, PreviewModal, PreviewViewState>(

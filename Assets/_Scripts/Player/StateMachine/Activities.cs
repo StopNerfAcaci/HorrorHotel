@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
+using Gameplay.Inventory;
 
 namespace HSM
 {
@@ -50,4 +51,5 @@ namespace HSM
             await base.ActivateAsync(ct);
         }
     }
+
 }

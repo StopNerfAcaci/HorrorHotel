@@ -8,13 +8,12 @@ namespace HSM
     {
         private readonly PlayerStateDriver player;
         private readonly PlayerData data;
-        private const float smoothTime = 0.2f;
 
         private float currentSpeed;
         private float vel;
         private float targetSpeed;
         private Movement movement;
-
+        private WorldItem pendingItem;
 
         public Movement Movement
         {
@@ -52,7 +51,11 @@ namespace HSM
 
         private void OnCancel()
         {
-            if (Interaction.TryPressed()) clickRequested = true;
+            if (Interaction.TryPressed(out var item))
+            {
+                clickRequested = true;
+                pendingItem = item;
+            }
         }
         protected override void PhysicsUpdate(float deltaTime)
         {
@@ -87,6 +90,11 @@ namespace HSM
             Movement.SetVelocityXZ(inputDirection, currentSpeed);
         }
 
-        protected override State GetTransition() => clickRequested ? ((PlayerRoot)Parent).AbilityState : null;
+        protected override State GetTransition()
+        {
+            if (!clickRequested) return null;
+            ((PlayerRoot)Parent).PendingItem = pendingItem;
+            return ((PlayerRoot)Parent).AbilityState;
+        }
     }
 }

@@ -7,7 +7,6 @@ namespace HSM
 {
     public abstract class State : IDisposable
     {
-        protected const float ZeroF = 0f;
          
         public readonly StateMachine Machine;
         public readonly State Parent;

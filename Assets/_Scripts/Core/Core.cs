@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using GameCore.Presentation.Shared;
 using UnityEngine;
 
 namespace Gameplay.CoreSystem
@@ -10,8 +11,7 @@ namespace Gameplay.CoreSystem
         // public SerializableGuid Id { get; set; } = SerializableGuid.NewGuid();
         // public EntityData data;
         [field: SerializeField] public GameObject Root { get; private set; }
-        public readonly List<CoreComponents> components = new List<CoreComponents>();
-
+        public readonly List<CoreComponents> components = new();
         private void Awake()
         {
             Root = Root ? Root : transform.parent.gameObject;
