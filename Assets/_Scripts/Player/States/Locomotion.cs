@@ -88,18 +88,13 @@ namespace HSM
             }
             Movement.SetVelocityXZ(inputDirection, currentSpeed);
         }
-
-<<<<<<< Updated upstream
+        
         protected override State GetTransition()
         {
             if (!clickRequested) return null;
             ((PlayerRoot)Parent).PendingItem = pendingItem;
             return ((PlayerRoot)Parent).AbilityState;
         }
-=======
-
-
-        protected override State GetTransition() => clickRequested ? ((PlayerRoot)Parent).AbilityState : null;
->>>>>>> Stashed changes
+        
     }
 }
