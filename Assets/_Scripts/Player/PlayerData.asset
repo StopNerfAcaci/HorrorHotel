@@ -12,8 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ffc1514b3bc4c45ae1c99fd4b383404, type: 3}
   m_Name: PlayerData
   m_EditorClassIdentifier: HSM::HSM.PlayerData
-  moveSpeed: 5
-  jumpSpeed: 4
-  jumpDuration: 0.4
-  rotationSpeed: 720
-  gravityMultiplier: 3
+  MoveSpeed: 4
+  SprintSpeed: 6
+  RotationSpeed: 1
+  SpeedChangeRate: 10
+  JumpHeight: 1.2
+  Gravity: -15
+  JumpTimeout: 0.1
+  FallTimeout: 0.15
+  TopClamp: 110
+  BottomClamp: -90
