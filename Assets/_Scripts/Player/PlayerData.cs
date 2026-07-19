@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using Gameplay.Inventory;
 using UnityEngine;
 
 namespace HSM
@@ -35,5 +37,8 @@ namespace HSM
 
         [Tooltip("How far in degrees can you move the camera down")]
         public float BottomClamp = -90.0f;
+        [Space(5)]
+        [SerializeField] private List<ItemSO> startItems = new List<ItemSO>();
+        public List<ItemSO> StartItem => startItems;
     }
 }

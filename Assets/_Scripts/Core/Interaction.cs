@@ -13,7 +13,7 @@ public class Interaction : CoreComponents
     [Header("Hold / Inspect")] [SerializeField]
     private Vector3 holdLocalOffset = new Vector3(0f, 0f, 1.2f);
 
-    private WorldItem _hoveredItem;
+    private IInteractable _hoveredItem;
     
 
     private void Reset()
@@ -25,44 +25,42 @@ public class Interaction : CoreComponents
     {
         HandleHoverRaycast();
     }
-
-
+    
     // ---------- Hover detection (before pickup) ----------
 
     private void HandleHoverRaycast()
     {
         Ray ray = playerCamera.ScreenPointToRay(new Vector3(Screen.width * 0.5f, Screen.height * 0.5f, 0f));
-
-        WorldItem newHover = null;
-
+    
+        IInteractable newHover = null;
+    
         if (Physics.Raycast(ray, out RaycastHit hit, interactRange, itemLayerMask))
         {
-            newHover = hit.collider.GetComponentInParent<WorldItem>();
+            newHover = hit.collider.GetComponentInParent<IInteractable>();
         }
-
+    
         if (newHover != _hoveredItem)
         {
-            if (_hoveredItem != null) _hoveredItem.SetHighlighted(false);
+            // if (_hoveredItem != null) _hoveredItem.SetHighlighted(false);
             _hoveredItem = newHover;
-            if (_hoveredItem != null) _hoveredItem.SetHighlighted(true);
+            // if (_hoveredItem != null) _hoveredItem.SetHighlighted(true);
         }
     }
 
     // ---------- Pickup / Inspect ----------
-    private void BeginInspect(WorldItem item)
+    private void BeginInspect(IInteractable item)
     {
-        item.SetHighlighted(false);
-        item.CacheOriginalTransform();
-        item.SetPhysicsEnabled(false);
-
-        item.transform.SetParent(playerCamera.transform, worldPositionStays: false);
-        item.transform.localPosition = holdLocalOffset;
-        item.transform.localRotation = Quaternion.identity;
+        Debug.Log("Begin inspect: " + item);
+        item.Interact(new InteractContext()
+        {
+            NewTransform = playerCamera.transform,
+            Offset = holdLocalOffset,
+        });
         
         _hoveredItem = null;
     }
 
-    public bool TryPressed(out WorldItem item)
+    public bool TryPressed(out IInteractable item)
     {
         item = _hoveredItem;
         if (_hoveredItem == null) return false;

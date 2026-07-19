@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Linq;
-using Gameplay.Combat;
 using Gameplay.CoreSystem;
+using Gameplay.Inventory;
 using R3;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityServiceLocator;
 
 namespace HSM
 {
@@ -14,6 +14,7 @@ namespace HSM
         [SerializeField] private PlayerData data;
         [SerializeField] private bool cursorLocked = true;
 
+        public PlayerInventory Inventory { get; private set; }
         public Core Core { get; private set; }
 
         private StateMachine Machine;
@@ -80,7 +81,9 @@ namespace HSM
 
         private void SetupComponents()
         {
-            // animator = GetComponentInChildren<Animator>();
+            ServiceLocator.Global.Register<PlayerInventory>(Inventory =
+                new PlayerInventory.Builder().WithEntryItems(Data.StartItem).Build()
+            );
         }
 
 
@@ -114,6 +117,10 @@ namespace HSM
         }
 
         internal void SetBusy(bool busy) => isBusy = busy;
-        
+
+        // private void OnGUI()
+        // {
+        //     
+        // }
     }
 }

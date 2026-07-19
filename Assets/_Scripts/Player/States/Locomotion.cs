@@ -13,18 +13,20 @@ namespace HSM
         private float vel;
         private float targetSpeed;
         private Movement movement;
-        private WorldItem pendingItem;
+        private IInteractable pendingItem;
 
         public Movement Movement
         {
             get => movement ??= core.GetCoreComponent<Movement>();
         }
+
         private Interaction _interaction;
 
         public Interaction Interaction
         {
             get => _interaction ?? core.GetCoreComponent<Interaction>();
         }
+
         private bool clickRequested;
 
         protected Vector2 MoveInput => player.Reader.Direction;
@@ -40,23 +42,31 @@ namespace HSM
         protected override void OnEnter()
         {
             clickRequested = false;
-            player.Reader.Cancel += OnCancel;
-
+            player.Reader.Click += OnClick;
+            player.Reader.ToggleInventory += TriggerInventory;
         }
 
         protected override void OnExit()
         {
-            player.Reader.Cancel -= OnCancel;
+            player.Reader.Click -= OnClick;
+            player.Reader.ToggleInventory -= TriggerInventory;
         }
 
-        private void OnCancel()
+
+        private void OnClick()
         {
             if (Interaction.TryPressed(out var item))
             {
                 clickRequested = true;
-                pendingItem = item;
+                ((PlayerRoot)Parent).PendingInteractable = item;
             }
         }
+
+        private void TriggerInventory(bool value)
+        {
+            //TODO: Open inventory
+        }
+
         protected override void PhysicsUpdate(float deltaTime)
         {
             targetSpeed = player.GetSpeed();
@@ -65,11 +75,10 @@ namespace HSM
             float currentHorizontalSpeed = horizontalVelocity.magnitude;
 
             float speedOffset = 0.1f;
-            
+
             if (currentHorizontalSpeed < targetSpeed - speedOffset ||
                 currentHorizontalSpeed > targetSpeed + speedOffset)
             {
-
                 currentSpeed = Mathf.Lerp(currentHorizontalSpeed, targetSpeed * MoveInput.magnitude,
                     Time.deltaTime * data.SpeedChangeRate);
 
@@ -79,22 +88,18 @@ namespace HSM
             {
                 currentSpeed = targetSpeed;
             }
-            
+
             Vector3 inputDirection = new Vector3(MoveInput.x, 0.0f, MoveInput.y).normalized;
-            
+
             if (MoveInput != Vector2.zero)
             {
                 inputDirection = player.transform.right * MoveInput.x + player.transform.forward * MoveInput.y;
             }
+
             Movement.SetVelocityXZ(inputDirection, currentSpeed);
         }
-        
-        protected override State GetTransition()
-        {
-            if (!clickRequested) return null;
-            ((PlayerRoot)Parent).PendingItem = pendingItem;
-            return ((PlayerRoot)Parent).AbilityState;
-        }
-        
+
+
+        protected override State GetTransition() => clickRequested ? ((PlayerRoot)Parent).AbilityState : null;
     }
 }

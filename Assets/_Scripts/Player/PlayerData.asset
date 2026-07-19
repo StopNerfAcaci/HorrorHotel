@@ -22,3 +22,5 @@ MonoBehaviour:
   FallTimeout: 0.15
   TopClamp: 110
   BottomClamp: -90
+  startItems:
+  - {fileID: 11400000, guid: 2d632bf7b6e2c374d88b75a0e7004f11, type: 2}

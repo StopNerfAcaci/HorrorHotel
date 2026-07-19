@@ -2,5 +2,12 @@ using UnityEngine;
 
 public interface IInteractable
 {
-    void Perform();
+    bool CanPerform();
+    void Interact(InteractContext ctx);
+}
+
+public struct InteractContext
+{
+    public Transform NewTransform;
+    public Vector3 Offset;
 }
