@@ -78,6 +78,7 @@
     <Compile Include="Assets\_Scripts\GameCore\UnityServiceLocator\ServiceManager.cs" />
     <Compile Include="Assets\_Scripts\Core\GroundChecker.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Presentation\NewMonoBehaviourScript.cs" />
+    <Compile Include="Assets\_Scripts\Player\States\CutsceneState.cs" />
     <Compile Include="Assets\_Scripts\Player\StateMachine\TransitionSequencer.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Presentation\Shared\ModuleInstaller\RouterModuleInstaller.cs" />
     <Compile Include="Assets\_Scripts\GlobalSettings\AsyncLoadOrderingManager.cs" />

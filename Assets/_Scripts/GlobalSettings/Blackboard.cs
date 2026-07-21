@@ -20,8 +20,4 @@ public class Blackboard : GlobalSettingsBase<Blackboard>
         GlobalSettingsBase<Blackboard>.StartUnload();
     }
 
-    protected override void OnPostPreload()
-    {
-        
-    }
 }

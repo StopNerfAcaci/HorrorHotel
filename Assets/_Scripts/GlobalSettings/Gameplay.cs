@@ -26,12 +26,6 @@ namespace GlobalSettings
         {
             GlobalSettingsBase<Gameplay>.StartUnload();
         }
-
-        protected override void OnPostPreload()
-        {
-            if (days == null || days.Length == 0) return;
-
-
-        }
+        
     }
 }

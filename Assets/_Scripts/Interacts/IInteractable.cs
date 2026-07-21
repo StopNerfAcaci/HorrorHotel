@@ -6,6 +6,11 @@ public interface IInteractable
     void Interact(InteractContext ctx);
 }
 
+public interface IEnvironment : IInteractable
+{
+    float Delay { get; }
+}
+
 public struct InteractContext
 {
     public Transform NewTransform;

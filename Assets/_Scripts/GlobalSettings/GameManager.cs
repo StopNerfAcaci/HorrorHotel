@@ -30,10 +30,5 @@ namespace GlobalSettings
         {
             GlobalSettingsBase<GameManager>.StartUnload();
         }
-
-        protected override void OnPostPreload()
-        {
-        }
-        
     }
 }

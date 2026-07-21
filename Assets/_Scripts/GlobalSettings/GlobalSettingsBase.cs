@@ -63,15 +63,10 @@ namespace GlobalSettings
                         _foundInstance = true;
                         _delayedLoaderCts?.Dispose();
                         _delayedLoaderCts = null;
-
-                        Debug.Log("Finish loading " + fileName);
-                        _instance.OnPostPreload();
                     });
             }
         }
-
-        protected abstract void OnPostPreload();
-
+        
         protected static void StartUnload()
         {
             if (_loadHandle.HasValue)
