@@ -1,9 +1,4 @@
 ﻿using GameCore.Presentation.Shared;
-using Gameplay.CoreSystem;
-using Gameplay.Inventory;
-using R3;
-using UnityEngine;
-using Utils.Helpers;
 
 namespace HSM
 {

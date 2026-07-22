@@ -1,7 +1,4 @@
-﻿using System.Threading.Tasks;
-using Cysharp.Threading.Tasks;
-using DG.Tweening;
-using Gameplay.Inventory;
+﻿using Cysharp.Threading.Tasks;
 using UnityEngine;
 using Utils.Extensions;
 
@@ -28,6 +25,7 @@ namespace HSM
 
         protected override void OnEnter()
         {
+            isAbilityDone = false;
             player.Reader.Interact += OnInteract;
             player.Reader.Pointed += GetLastPoint;
             player.SetBusy(true);
@@ -78,7 +76,6 @@ namespace HSM
 
         private async UniTask InteractAsync()
         {
-            // gameplayManager.UpdateDayPhase(_heldItem.itemData);
            await _heldItem.Use();
             _heldItem = null;
             isAbilityDone = true;

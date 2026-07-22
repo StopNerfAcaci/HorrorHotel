@@ -57,13 +57,14 @@
     <Compile Include="Assets\_Scripts\GameCore\Presentation\TransitionService.cs" />
     <Compile Include="Assets\_Scripts\GameCore\UnityServiceLocator\Bootstrapper.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Presentation\ObjectPreview\PreviewPresenter.cs" />
-    <Compile Include="Assets\_Scripts\Gameplay\Inventory\ItemSO.cs" />
+    <Compile Include="Assets\_Scripts\SaveLoad\JsonSerializer.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Presentation\Loading\LoadingActivity.cs" />
     <Compile Include="Assets\_Scripts\Interacts\IInteractable.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Presentation\ObjectPreview\PreviewViewState.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Presentation\MainUI\GameplayModel.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Presentation\MainUI\GameplayScreen.cs" />
     <Compile Include="Assets\_Scripts\GlobalSettings\GlobalSettingsLoader.cs" />
+    <Compile Include="Assets\_Scripts\GlobalSettings\Inventory.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Presentation\Shared\IModuleInstaller.cs" />
     <Compile Include="Assets\_Scripts\Core\Interaction.cs" />
     <Compile Include="Assets\_Scripts\Stat\HealthComponent.cs" />
@@ -83,7 +84,9 @@
     <Compile Include="Assets\_Scripts\GameCore\Presentation\Shared\ModuleInstaller\RouterModuleInstaller.cs" />
     <Compile Include="Assets\_Scripts\GlobalSettings\AsyncLoadOrderingManager.cs" />
     <Compile Include="Assets\_Scripts\GameCore\UnityUIExtensions.cs" />
+    <Compile Include="Assets\_Scripts\SaveLoad\FileDataService.cs" />
     <Compile Include="Assets\_Scripts\Player\StateMachine\Activities.cs" />
+    <Compile Include="Assets\_Scripts\SaveLoad\ISerialize.cs" />
     <Compile Include="Assets\_Scripts\Player\States\AbilityState.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Presentation\Inventory\InventoryScreen.cs" />
     <Compile Include="Assets\_Scripts\Core\CoreComponents.cs" />
@@ -91,7 +94,6 @@
     <Compile Include="Assets\_Scripts\GameCore\Presentation\Loading\LoadingViewState.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Presentation\Loading\LoadingSubPresenter.cs" />
     <Compile Include="Assets\_Scripts\Player\CameraManager.cs" />
-    <Compile Include="Assets\_Scripts\Gameplay\Inventory\PlayerInventory.cs" />
     <Compile Include="Assets\_Scripts\Player\StateMachine\ISequence.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerData.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Presentation\Inventory\InventoryViewState.cs" />
@@ -100,6 +102,8 @@
     <Compile Include="Assets\_Scripts\GameCore\UIManager.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Presentation\Shared\TransitionService.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Presentation\Home\HomeViewState.cs" />
+    <Compile Include="Assets\_Scripts\Gameplay\ItemSO.cs" />
+    <Compile Include="Assets\_Scripts\Interacts\Bed.cs" />
     <Compile Include="Assets\_Scripts\Gameplay\GlobalEnums\ItemEnums.cs" />
     <Compile Include="Assets\_Scripts\Player\States\InteractState.cs" />
     <Compile Include="Assets\_Scripts\Interacts\WorldItem.cs" />
@@ -108,6 +112,7 @@
     <Compile Include="Assets\_Scripts\Player\StateMachine\StateMachineBuilder.cs" />
     <Compile Include="Assets\_Scripts\Managers\GameplayManager.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Presentation\ObjectPreview\PreviewModal.cs" />
+    <Compile Include="Assets\_Scripts\SaveLoad\IDataService.cs" />
     <Compile Include="Assets\_Scripts\Player\InputReader.cs" />
     <Compile Include="Assets\_Scripts\GlobalSettings\Blackboard.cs" />
     <Compile Include="Assets\_Scripts\GameCore\UnityServiceLocator\ServiceLocator.cs" />

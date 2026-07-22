@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using Gameplay.Inventory;
 using UnityEngine;
 
 namespace HSM

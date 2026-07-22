@@ -2,9 +2,7 @@
 using System.Threading.Tasks;
 using Cysharp.Threading.Tasks;
 using DG.Tweening;
-using Gameplay.Inventory;
 using UnityEngine;
-using UnityServiceLocator;
 
 [RequireComponent(typeof(Collider))]
 public class WorldItem : MonoBehaviour, IItem
@@ -23,7 +21,6 @@ public class WorldItem : MonoBehaviour, IItem
     private Color[] _originalColors;
     private MaterialPropertyBlock _mpb;
 
-    private PlayerInventory inventory;
 
     private void Awake()
     {
@@ -37,10 +34,10 @@ public class WorldItem : MonoBehaviour, IItem
 
     }
 
-    private void Start()
-    {
-        ServiceLocator.For(this).Get(out inventory);
-    }
+    // private void Start()
+    // {
+    //     ServiceLocator.For(this).Get(out inventory);
+    // }
 
     /// <summary>Call before picking up so we can restore state on cancel.</summary>
     public void CacheOriginalTransform()
@@ -84,11 +81,10 @@ public class WorldItem : MonoBehaviour, IItem
 
     public async UniTask Use()
     {
-        inventory.AddItem(itemData);
+        GlobalSettings.Inventory.Get().AddItem(itemData);
         transform.DOKill();
-        await transform.DOMoveY(-6f, 1f).SetEase(Ease.OutBack);
+        await transform.DOMoveY(-4f, .5f).SetEase(Ease.OutBack);
         gameObject.SetActive(false);
-        // Object.Destroy(gameObject);
     }
 
     public bool CanPerform() => true;

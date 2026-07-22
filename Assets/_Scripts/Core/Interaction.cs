@@ -51,6 +51,7 @@ public class Interaction : CoreComponents
     private void BeginInspect(IInteractable item)
     {
         Debug.Log("Begin inspect: " + item);
+        if(!item.CanPerform()) return;
         item.Interact(new InteractContext()
         {
             NewTransform = playerCamera.transform,

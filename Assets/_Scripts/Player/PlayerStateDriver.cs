@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 using Gameplay.CoreSystem;
-using Gameplay.Inventory;
 using R3;
 using UnityEngine;
 using UnityServiceLocator;
@@ -14,7 +13,6 @@ namespace HSM
         [SerializeField] private PlayerData data;
         [SerializeField] private bool cursorLocked = true;
 
-        public PlayerInventory Inventory { get; private set; }
         public Core Core { get; private set; }
 
         private StateMachine Machine;
@@ -81,9 +79,9 @@ namespace HSM
 
         private void SetupComponents()
         {
-            ServiceLocator.Global.Register<PlayerInventory>(Inventory =
-                new PlayerInventory.Builder().WithEntryItems(Data.StartItem).Build()
-            );
+            // ServiceLocator.Global.Register<PlayerInventory>(Inventory =
+            //     new PlayerInventory.Builder().WithEntryItems(Data.StartItem).Build()
+            // );
         }
 
 

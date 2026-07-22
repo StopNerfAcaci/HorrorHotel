@@ -1,7 +1,5 @@
 using System;
 using System.Collections.Generic;
-using Gameplay.Inventory;
-using UnityEngine;
 
 [Serializable]
 public struct DayPhase
@@ -15,5 +13,4 @@ public struct DayPhase
         var dayString = isDaytime ? "Day" : "Night";
         return $"Day {day} - at {dayString}";
     }
-
 }

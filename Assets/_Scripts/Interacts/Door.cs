@@ -18,11 +18,10 @@ public class Door : MonoBehaviour, IEnvironment
     }
 
     public Transform Transform => transform;
-    public bool CanPerform() => !needKey || GlobalSettings.Gameplay.HasKey;
+    public bool CanPerform() => !needKey;
 
     public void Interact(InteractContext context)
     {
-        if (!CanPerform()) return;
         if (!isToggleDoor)
         {
             isToggleDoor = true;

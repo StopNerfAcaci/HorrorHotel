@@ -1,31 +1,45 @@
-﻿using Gameplay.Inventory;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace GlobalSettings
 {
     [CreateAssetMenu(fileName = "Gameplay", menuName = "GlobalSettings/Gameplay")]
-    public class Gameplay : GlobalSettingsBase<Gameplay>
+    public class Gameplay : ScriptableObject
     {
         [SerializeField] private DayPhase[] days;
         [SerializeField] private bool hasKey = false;
-        public static DayPhase[] Days => Get().days;
-        public static bool HasKey => Get().hasKey;
+        public DayPhase[] Days => days;
+        private const string DayPrefix = "DayKey";
 
-        public static Gameplay Get()
+        public void SaveDay(DayPhase dp)
         {
-            return GlobalSettingsBase<Gameplay>.Get("Gameplay");
+            int encoded = dp.day * 2 + (dp.isDaytime ? 0 : 1);
+            PlayerPrefs.SetInt(DayPrefix, encoded);
+            PlayerPrefs.Save();
         }
 
-        [RuntimeInitializeOnLoadMethod]
-        public static void PreWarm()
+        public bool TryLoadDay(out DayPhase result)
         {
-            GlobalSettingsBase<Gameplay>.StartPreloadAddressable("Gameplay");
-        }
+            if (!PlayerPrefs.HasKey(DayPrefix))
+            {
+                result = days[0];
+                return false;
+            }
 
-        public static void UnLoad()
-        {
-            GlobalSettingsBase<Gameplay>.StartUnload();
+            int encoded = PlayerPrefs.GetInt(DayPrefix);
+            int day = encoded / 2;
+            bool isDaytime = encoded % 2 == 0;
+
+            foreach (var d in days)
+            {
+                if (d.day == day && d.isDaytime == isDaytime)
+                {
+                    result = d;
+                    return true;
+                }
+            }
+
+            result = days[0];
+            return false;
         }
-        
     }
 }

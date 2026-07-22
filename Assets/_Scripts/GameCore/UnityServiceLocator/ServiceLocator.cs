@@ -165,6 +165,6 @@ namespace UnityServiceLocator
         {
             var go = new GameObject(k_globalServiceLocatorName, typeof(ServiceLocatorSceneBootstrapper));
         }
-    }
 #endif
+    }
 }
