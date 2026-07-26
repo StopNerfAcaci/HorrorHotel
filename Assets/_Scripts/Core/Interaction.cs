@@ -14,7 +14,8 @@ public class Interaction : CoreComponents
     private Vector3 holdLocalOffset = new Vector3(0f, 0f, 1.2f);
 
     private IInteractable _hoveredItem;
-    
+    public static Action<ItemSO> OnInspectItem;
+
 
     private void Reset()
     {
@@ -25,20 +26,20 @@ public class Interaction : CoreComponents
     {
         HandleHoverRaycast();
     }
-    
+
     // ---------- Hover detection (before pickup) ----------
 
     private void HandleHoverRaycast()
     {
         Ray ray = playerCamera.ScreenPointToRay(new Vector3(Screen.width * 0.5f, Screen.height * 0.5f, 0f));
-    
+
         IInteractable newHover = null;
-    
+
         if (Physics.Raycast(ray, out RaycastHit hit, interactRange, itemLayerMask))
         {
             newHover = hit.collider.GetComponentInParent<IInteractable>();
         }
-    
+
         if (newHover != _hoveredItem)
         {
             // if (_hoveredItem != null) _hoveredItem.SetHighlighted(false);
@@ -51,13 +52,17 @@ public class Interaction : CoreComponents
     private void BeginInspect(IInteractable item)
     {
         Debug.Log("Begin inspect: " + item);
-        if(!item.CanPerform()) return;
         item.Interact(new InteractContext()
         {
             NewTransform = playerCamera.transform,
             Offset = holdLocalOffset,
         });
-        
+        if (_hoveredItem is IItem)
+        {
+            IItem inspectItem = _hoveredItem as IItem;
+            OnInspectItem?.Invoke(inspectItem.Item);
+        }
+
         _hoveredItem = null;
     }
 

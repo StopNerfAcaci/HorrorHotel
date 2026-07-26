@@ -55,6 +55,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Animation.Rigging", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Services.Analytics", "Unity.Services.Analytics.csproj", "{586a2020-5287-eb98-102e-52ce5826d76c}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildReportTool", "BuildReportTool.csproj", "{5be569b7-5cc7-42be-864b-5c73ff06d28e}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VContainer", "VContainer.csproj", "{faa61290-4700-3b18-4bf6-998873b956f5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.VisualStudio.Editor", "Unity.VisualStudio.Editor.csproj", "{7e884dfa-ac04-932b-1884-eb650b27b5e3}"
@@ -392,6 +394,8 @@ Global
 		{c5395d7c-5c67-6bbc-d6f2-b94e9d547abf}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{586a2020-5287-eb98-102e-52ce5826d76c}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{586a2020-5287-eb98-102e-52ce5826d76c}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5be569b7-5cc7-42be-864b-5c73ff06d28e}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5be569b7-5cc7-42be-864b-5c73ff06d28e}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{faa61290-4700-3b18-4bf6-998873b956f5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{faa61290-4700-3b18-4bf6-998873b956f5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7e884dfa-ac04-932b-1884-eb650b27b5e3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU

@@ -1323,6 +1323,10 @@
       <Project>{eeeb6314-de62-4940-40c5-e3a7dfc03434}</Project>
       <Name>Unity.InputSystem</Name>
     </ProjectReference>
+    <ProjectReference Include="BuildReportTool.csproj">
+      <Project>{5be569b7-5cc7-42be-864b-5c73ff06d28e}</Project>
+      <Name>BuildReportTool</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.Splines.csproj">
       <Project>{e477110d-b751-e059-cbef-8f1c8c96e7b2}</Project>
       <Name>Unity.Splines</Name>

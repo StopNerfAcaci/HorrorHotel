@@ -1,25 +1,31 @@
-﻿using Cysharp.Threading.Tasks;
+﻿using System;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
-using Utils.Extensions;
+using UnityServiceLocator;
+using VitalRouter;
+using R3;
 
 namespace HSM
 {
     public class InteractState : State
     {
         private readonly PlayerStateDriver player;
-
-        // private readonly GameplayManager gameplayManager;
-
+        
         private bool isAbilityDone;
         private float _yaw;
         private float _pitch;
 
         private IItem _heldItem;
         private Vector2 prevPos;
-
+        private GameplayManager gm;
+        private readonly Router router;
+        private DisposableBag _bag;
         public InteractState(StateMachine machine, State parent, PlayerStateDriver player) : base(machine, parent)
         {
             this.player = player;
+            ServiceLocator.For(player).Get<GameplayManager>(out gm);
+            
+            ServiceLocator.For(player).Get<Router>(out router);
         }
 
 
@@ -32,23 +38,21 @@ namespace HSM
             var root = (PlayerRoot)Parent.Parent;
             _heldItem = root.PendingInteractable as IItem;
             root.PendingInteractable = null;
+            router.PublishAsync(new ItemInteractionStartedCommand(_heldItem.Item));
+            gm.State = GameplayManager.GameState.Interact;
+            
             _yaw = 0f;
             _pitch = 0f;
             // ShowPreviewAsync().Forget();
         }
-
-        // private async UniTask ShowPreviewAsync()
-        // {
-        //     var transition = ((PlayerRoot)Parent.Parent).TransitionService;
-            // var preview = await transition.ShowPreviewModal();
-            // preview.ItemPreviewCommand.Execute(_heldItem.itemData);
-        // }
 
         protected override void OnExit()
         {
             player.Reader.Interact -= OnInteract;
             player.Reader.Pointed -= GetLastPoint;
             player.SetBusy(false);
+            router.PublishAsync(new ItemInteractionEndedCommand());
+            gm.State = GameplayManager.GameState.Movement;
         }
 
         private void GetLastPoint(Vector2 pos)
@@ -76,11 +80,17 @@ namespace HSM
 
         private async UniTask InteractAsync()
         {
-           await _heldItem.Use();
+            await _heldItem.Use();
             _heldItem = null;
             isAbilityDone = true;
         }
 
         protected override State GetTransition() => isAbilityDone ? ((PlayerRoot)Parent.Parent).Locomotion : null;
+
+        public override void Dispose()
+        {
+            base.Dispose();
+            _bag.Dispose();
+        }
     }
 }

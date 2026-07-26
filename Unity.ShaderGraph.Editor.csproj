@@ -489,8 +489,8 @@
     <Compile Include="Library\PackageCache\com.unity.shadergraph@28ee1cc75774\Editor\Data\Nodes\Input\Geometry\BitangentVectorNode.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@28ee1cc75774\Editor\Drawing\Views\PropertyNodeView.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@28ee1cc75774\Editor\Data\Nodes\UI\DefaultGradientNode.cs" />
-    <Compile Include="Library\PackageCache\com.unity.shadergraph@28ee1cc75774\Editor\Data\Nodes\Input\Texture\TexelSizeNode.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@28ee1cc75774\Editor\Data\Nodes\Math\Vector\CrossProductNode.cs" />
+    <Compile Include="Library\PackageCache\com.unity.shadergraph@28ee1cc75774\Editor\Data\Nodes\Input\Texture\TexelSizeNode.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@28ee1cc75774\Editor\Data\Graphs\Texture2DInputMaterialSlot.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@28ee1cc75774\Editor\Drawing\Blackboard\SGBlackboardRow.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@28ee1cc75774\Editor\Importers\ShaderGraphTemplate.cs" />

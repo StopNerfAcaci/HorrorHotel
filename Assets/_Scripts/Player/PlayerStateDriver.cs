@@ -32,7 +32,6 @@ namespace HSM
             SetupMachine();
         }
 
-
         private void Start()
         {
             Machine.Start();
@@ -79,9 +78,6 @@ namespace HSM
 
         private void SetupComponents()
         {
-            // ServiceLocator.Global.Register<PlayerInventory>(Inventory =
-            //     new PlayerInventory.Builder().WithEntryItems(Data.StartItem).Build()
-            // );
         }
 
 
@@ -115,10 +111,6 @@ namespace HSM
         }
 
         internal void SetBusy(bool busy) => isBusy = busy;
-
-        // private void OnGUI()
-        // {
-        //     
-        // }
+        
     }
 }

@@ -36,7 +36,6 @@ namespace GlobalSettings
                 bool collected = PlayerPrefs.GetInt(KeyPrefix + entry.item.ItemId, defaultValue ? 1 : 0) == 1;
                 itemFlagDict[entry.item] = collected;
             }
-            Debug.Log("Inventory loaded");
         }
         
         [RuntimeInitializeOnLoadMethod]

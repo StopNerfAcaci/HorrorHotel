@@ -8,7 +8,7 @@ using UnityEngine;
 public class WorldItem : MonoBehaviour, IItem
 {
     [Header("Item Data")] public ItemSO itemData;
-    public int quantity = 1;
+    public ItemSO Item => itemData;
 
     [Header("Optional Highlight")] public Renderer[] highlightRenderers;
     public Color highlightColor = Color.yellow;
@@ -31,14 +31,8 @@ public class WorldItem : MonoBehaviour, IItem
             highlightRenderers = GetComponentsInChildren<Renderer>();
 
         _mpb = new MaterialPropertyBlock();
-
     }
-
-    // private void Start()
-    // {
-    //     ServiceLocator.For(this).Get(out inventory);
-    // }
-
+    
     /// <summary>Call before picking up so we can restore state on cancel.</summary>
     public void CacheOriginalTransform()
     {
@@ -94,7 +88,7 @@ public class WorldItem : MonoBehaviour, IItem
     {
         CacheOriginalTransform();
         SetPhysicsEnabled(false);
-        
+
         transform.SetParent(context.NewTransform, worldPositionStays: false);
         transform.localPosition = context.Offset;
         transform.localRotation = Quaternion.identity;

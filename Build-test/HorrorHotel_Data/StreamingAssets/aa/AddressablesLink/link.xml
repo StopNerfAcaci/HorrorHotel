@@ -2,10 +2,12 @@
   <assembly fullname="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="Blackboard" preserve="all" />
     <type fullname="GameCore.Presentation.PreviewModal" preserve="all" />
-    <type fullname="Gameplay.Inventory.ItemSO" preserve="all" />
     <type fullname="GlobalSettings.GameManager" preserve="all" />
     <type fullname="GlobalSettings.Gameplay" preserve="all" />
+    <type fullname="GlobalSettings.Inventory" preserve="all" />
+    <type fullname="ItemSO" preserve="all" />
     <type fullname="DayPhase" preserve="nothing" serialized="true" />
+    <type fullname="GlobalSettings.Inventory/KeyItemEntry" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="Unity.Addressables, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
     <type fullname="UnityEngine.AddressableAssets.Addressables" preserve="all" />

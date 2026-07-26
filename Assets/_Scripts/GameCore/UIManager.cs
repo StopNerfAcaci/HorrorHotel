@@ -2,34 +2,76 @@ using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using VitalRouter;
 
+public enum PopupType
+{
+    NotDoneProgress,
+    Settings
+}
+public readonly struct PopupCommand : ICommand
+{
+    public readonly PopupType type;
+    public PopupCommand(PopupType type)
+    {
+        this.type = type;
+    }
+}
 public class UIManager : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI dayText;
-    [SerializeField] private Button exitButton;
-    
+    [SerializeField] private BaseUIMenu[] menus;
+
     private GameplayManager gameplayManager;
+    public GameplayManager GameplayManager => gameplayManager;
+
     private void Awake()
     {
         gameplayManager = FindAnyObjectByType<GameplayManager>();
-        exitButton.onClick.RemoveAllListeners();
-        
-        exitButton.onClick.AddListener(Application.Quit);
+        foreach (var menu in menus) menu.Setup(this);
     }
 
     private void OnEnable()
     {
-        gameplayManager.OnDayPhaseChanged += UpdateText;
+        Interaction.OnInspectItem += UpdatePreview;
+        gameplayManager.OnGameplayStateChanged += UpdateState;
     }
 
     private void OnDisable()
     {
-        gameplayManager.OnDayPhaseChanged -= UpdateText;
+        Interaction.OnInspectItem -= UpdatePreview;
+        gameplayManager.OnGameplayStateChanged -= UpdateState;
     }
 
-    private void UpdateText(string res)
+    private void UpdatePreview(ItemSO obj)
     {
-        Debug.Log(res);
-        dayText.text = res;
+        
+    }
+
+    private void UpdateState(GameplayManager.GameState state)
+    {
+        switch (state)
+        {
+            case GameplayManager.GameState.Interact:
+                ShowMenu<ObjectPreviewMenu>();
+                break;
+            case GameplayManager.GameState.Movement:
+                ShowMenu<GameplayMenu>();
+                break;
+        }
+    }
+
+    private void ShowMenu<T>() where T : BaseUIMenu
+    {
+        foreach (var menu in menus)
+        {
+            if (menu is T)
+            {
+                menu.Show();
+            }
+            else
+            {
+                menu.Hide();
+            }
+        }
     }
 }
