@@ -1,14 +1,16 @@
 using System;
 using Cysharp.Threading.Tasks;
 using DG.Tweening;
+using GameCore.MVP;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityServiceLocator;
+using Utils.Extensions;
 using VitalRouter;
 
 [Routes]
-public partial class ObjectPreviewMenu : BaseUIMenu
+public partial class ObjectPreviewMenu : UIView, IMenu<UIContainer>
 {
     [SerializeField] private TextMeshProUGUI objectNameTxt;
     [SerializeField] private TextMeshProUGUI descriptionTxt;
@@ -17,12 +19,10 @@ public partial class ObjectPreviewMenu : BaseUIMenu
     
     private Router router;
     private ItemSO item;
-    private UIManager uIManager;
 
-    public override void Setup(UIManager uiManager)
+    public void Setup(UIContainer uiContainer)
     {
         container.SetActive(false);
-        this.uIManager = uiManager;
         ServiceLocator.For(this).Get<Router>(out router);
         MapTo(router);
     }
@@ -30,16 +30,17 @@ public partial class ObjectPreviewMenu : BaseUIMenu
     [Route]
     private void On(ItemInteractionStartedCommand cmd)
     {
-        Debug.Log("Got item:" + cmd.ItemData);
         item = cmd.ItemData;
-    }
-    
-    public void UpdatePreview(ItemSO item)
-    {
-        this.item = item;
+        Show();
     }
 
-    public override void Show()
+    [Route]
+    private void On(ItemInteractionEndedCommand cmd)
+    {
+        Hide();
+    }
+    
+    public void Show()
     {
         gameObject.SetActive(true);
         _ = ShowAsync();
@@ -54,14 +55,9 @@ public partial class ObjectPreviewMenu : BaseUIMenu
         container.SetActive(true);
     }
 
-    public override void Hide()
+    public void Hide()
     {
         gameObject.SetActive(false);
         // _ = HideAsync();
     }
-
-    // private async UniTask HideAsync()
-    // {
-    //     
-    // }
 }

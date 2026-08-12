@@ -17,13 +17,11 @@ namespace HSM
 
         private IItem _heldItem;
         private Vector2 prevPos;
-        private GameplayManager gm;
         private readonly Router router;
         private DisposableBag _bag;
         public InteractState(StateMachine machine, State parent, PlayerStateDriver player) : base(machine, parent)
         {
             this.player = player;
-            ServiceLocator.For(player).Get<GameplayManager>(out gm);
             
             ServiceLocator.For(player).Get<Router>(out router);
         }
@@ -39,11 +37,9 @@ namespace HSM
             _heldItem = root.PendingInteractable as IItem;
             root.PendingInteractable = null;
             router.PublishAsync(new ItemInteractionStartedCommand(_heldItem.Item));
-            gm.State = GameplayManager.GameState.Interact;
             
             _yaw = 0f;
             _pitch = 0f;
-            // ShowPreviewAsync().Forget();
         }
 
         protected override void OnExit()
@@ -52,7 +48,6 @@ namespace HSM
             player.Reader.Pointed -= GetLastPoint;
             player.SetBusy(false);
             router.PublishAsync(new ItemInteractionEndedCommand());
-            gm.State = GameplayManager.GameState.Movement;
         }
 
         private void GetLastPoint(Vector2 pos)

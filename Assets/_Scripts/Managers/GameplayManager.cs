@@ -1,45 +1,33 @@
 using System;
 using System.Collections.Generic;
 using GlobalSettings;
+using HSM;
 using Sirenix.OdinInspector;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityServiceLocator;
 using VitalRouter;
 
 [DefaultExecutionOrder(-1)]
 public class GameplayManager : MonoBehaviour
 {
-    public enum GameState
-    {
-        Pregame,
-        Movement,
-        Interact
-    }
-
     public event Action<string> OnDayPhaseChanged;
-    public Action<GameState> OnGameplayStateChanged;
 
+    [SerializeField] private CameraController camController;
     [SerializeField] private GlobalSettings.Gameplay gameplay;
-    private Queue<DayPhase> dayProcesses = new();
+    [SerializeField] private PlayerStateDriver player;
+    public PlayerStateDriver Player => player;
+
     private DayPhase currentDayPhase;
     private int currentDayIndex = -1;
 
+    public GameStateMachine FSM { get; set; }
 
-
-    private GameState state;
-
-    public GameState State
+#if UNITY_EDITOR
+    private void OnValidate()
     {
-        get { return state; }
-        set
-        {
-            Debug.Log("Change state to " + value.ToString());
-            OnGameplayStateChanged?.Invoke(value);
-            state = value;
-        }
+        if (player == null)  player = FindAnyObjectByType<PlayerStateDriver>(FindObjectsInactive.Include);
     }
-    
+#endif
     private void Awake()
     {
         Inventory.Get().LoadInventory();
@@ -61,7 +49,7 @@ public class GameplayManager : MonoBehaviour
             gameplay.SaveDay(currentDayPhase);
         }
 
-        State = GameState.Movement;
+        FSM = new GameStateMachine(this);
         OnDayPhaseChanged?.Invoke(currentDayPhase.GetDayString());
     }
 
@@ -107,4 +95,15 @@ public class GameplayManager : MonoBehaviour
         PlayerPrefs.DeleteAll();
         PlayerPrefs.Save();
     }
+
+    public void SwitchToPlayerCam()
+    {
+        camController.SwitchCam(true);
+    }
+}
+
+public struct ChangeStateCommand : ICommand
+{
+    public GameStateType StateType { get; }
+    public ChangeStateCommand(GameStateType stateType) => StateType = stateType;
 }

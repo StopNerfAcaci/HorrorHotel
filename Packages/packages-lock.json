@@ -363,22 +363,6 @@
       },
       "url": "https://packages.unity.com"
     },
-    "com.zbase.unityscreennavigator": {
-      "version": "https://github.com/Zitga-Tech/ZBase.UnityScreenNavigator.git?path=/Packages/ZBase.UnityScreenNavigator",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {
-        "com.cysharp.unitask": "2.5.10"
-      },
-      "hash": "99b4c0bfd9ca1c0fcd4b009d303f1ec3c1208034"
-    },
-    "jp.hadashikick.vcontainer": {
-      "version": "https://github.com/hadashiA/VContainer.git?path=VContainer/Assets/VContainer#1.18.0",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "6e6972730ce316fab2408f20e7a160aec070e48b"
-    },
     "jp.hadashikick.vitalrouter.unity": {
       "version": "https://github.com/hadashiA/VitalRouter.git?path=/src/VitalRouter.Unity/Assets/VitalRouter#2.4.1",
       "depth": 0,

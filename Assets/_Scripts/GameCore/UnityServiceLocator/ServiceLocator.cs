@@ -96,7 +96,7 @@ namespace UnityServiceLocator
 
             return Global;
         }
-
+        public T Get<T>() where T : class => services.Get<T>();
         public ServiceLocator Get<T>(out T service) where T : class
         {
             if (TryGetService(out service)) return this;

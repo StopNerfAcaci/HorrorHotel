@@ -7,6 +7,7 @@ namespace HSM
         private readonly PlayerStateDriver player;
         private readonly InteractState InteractState;
         public readonly CutsceneState CutsceneState;
+        public readonly ConversationState ConversationState;
         protected bool isAbilityDone = true;
 
 
@@ -23,6 +24,7 @@ namespace HSM
             core = player.Core;
             InteractState = new InteractState(machine, this, player);
             CutsceneState = new CutsceneState(machine, this, player);
+            ConversationState = new ConversationState(machine, this, player);
         }
 
         protected override void OnEnter()

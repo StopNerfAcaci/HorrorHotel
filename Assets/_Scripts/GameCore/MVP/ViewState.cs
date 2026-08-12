@@ -1,11 +1,10 @@
-﻿using System;
+using System;
 
-namespace MVP
+namespace GameCore.MVP
 {
-    public class ViewState : IDisposable
+    public class ViewState: IDisposable
     {
         private bool _disposed;
-
         public void Dispose()
         {
             if (!_disposed)

@@ -49,82 +49,86 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\_Scripts\GlobalSettings\GlobalSettingsBase.cs" />
-    <Compile Include="Assets\_Scripts\GameCore\Presentation\PopupSpawner.cs" />
     <Compile Include="Assets\_Scripts\GameCore\UnityServiceLocator\ServiceHolder.cs" />
     <Compile Include="Assets\_Scripts\Core\Core.cs" />
     <Compile Include="Assets\_Scripts\Core\Movement.cs" />
+    <Compile Include="Assets\_Scripts\GameCore\Menus\SettingMenu.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Audio\AudioManagerSO.cs" />
     <Compile Include="Assets\_Scripts\Gameplay\Spawner\SpawnZone.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Menus\MaingameScreen.cs" />
-    <Compile Include="Assets\_Scripts\GameCore\Menus\BaseUIMenu.cs" />
     <Compile Include="Assets\_Scripts\Interacts\Door.cs" />
+    <Compile Include="Assets\_Scripts\Interacts\IVisitor.cs" />
     <Compile Include="Assets\_Scripts\GameCore\UnityServiceLocator\Bootstrapper.cs" />
     <Compile Include="Assets\QuickOutline\Scripts\Outline.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Commands\ICommand.cs" />
-    <Compile Include="Assets\_Scripts\GameCore\Presentation\ObjectPreview\PreviewPresenter.cs" />
     <Compile Include="Assets\_Scripts\SaveLoad\JsonSerializer.cs" />
-    <Compile Include="Assets\_Scripts\GameCore\Presentation\Loading\LoadingActivity.cs" />
     <Compile Include="Assets\_Scripts\Interacts\IInteractable.cs" />
-    <Compile Include="Assets\_Scripts\GameCore\Presentation\ObjectPreview\PreviewViewState.cs" />
-    <Compile Include="Assets\_Scripts\GameCore\Presentation\MainUI\GameplayModel.cs" />
-    <Compile Include="Assets\_Scripts\GameCore\Presentation\MainUI\GameplayScreen.cs" />
     <Compile Include="Assets\_Scripts\GlobalSettings\GlobalSettingsLoader.cs" />
+    <Compile Include="Assets\_Scripts\GameCore\Menus\UIContainer.cs" />
     <Compile Include="Assets\_Scripts\GlobalSettings\Inventory.cs" />
-    <Compile Include="Assets\_Scripts\GameCore\Presentation\Shared\IModuleInstaller.cs" />
+    <Compile Include="Assets\_Scripts\Interacts\IDialogue.cs" />
+    <Compile Include="Assets\_Scripts\GameCore\Menus\HomeScreen.cs" />
     <Compile Include="Assets\_Scripts\Core\Interaction.cs" />
     <Compile Include="Assets\_Scripts\Stat\HealthComponent.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerStateDriver.cs" />
-    <Compile Include="Assets\_Scripts\GameCore\Presentation\Inventory\InventoryPresenter.cs" />
     <Compile Include="Assets\_Scripts\Gameplay\Effects\ClickAuraPlane.cs" />
+    <Compile Include="Assets\_Scripts\FSM\GameStateMachine.cs" />
     <Compile Include="Assets\_Scripts\Player\StateMachine\StateMachine.cs" />
+    <Compile Include="Assets\_Scripts\Interacts\Mediator.cs" />
+    <Compile Include="Assets\_Scripts\GameCore\MVP\ViewState.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Menus\IMenu.cs" />
     <Compile Include="Assets\_Scripts\GameCore\UnityServiceLocator\ServiceLocatorGlobalBootstrapper.cs" />
     <Compile Include="Assets\_Scripts\Player\States\PlayerRoot.cs" />
     <Compile Include="Assets\GameInput.cs" />
-    <Compile Include="Assets\_Scripts\GameCore\Presentation\MainUI\GameplayViewState.cs" />
     <Compile Include="Assets\_Scripts\GameCore\UnityServiceLocator\ServiceManager.cs" />
     <Compile Include="Assets\_Scripts\Core\GroundChecker.cs" />
     <Compile Include="Assets\_Scripts\GameCore\Menus\ObjectPreviewMenu.cs" />
-    <Compile Include="Assets\_Scripts\GameCore\Presentation\NewMonoBehaviourScript.cs" />
     <Compile Include="Assets\_Scripts\Player\States\CutsceneState.cs" />
     <Compile Include="Assets\_Scripts\Player\StateMachine\TransitionSequencer.cs" />
-    <Compile Include="Assets\_Scripts\GameCore\Presentation\Shared\ModuleInstaller\RouterModuleInstaller.cs" />
     <Compile Include="Assets\_Scripts\GlobalSettings\AsyncLoadOrderingManager.cs" />
+    <Compile Include="Assets\_Scripts\GameCore\Menus\HomeButton.cs" />
+    <Compile Include="Assets\_Scripts\Interacts\DialogueTrigger.cs" />
     <Compile Include="Assets\_Scripts\GameCore\UnityUIExtensions.cs" />
     <Compile Include="Assets\_Scripts\SaveLoad\FileDataService.cs" />
     <Compile Include="Assets\_Scripts\Player\StateMachine\Activities.cs" />
+    <Compile Include="Assets\_Scripts\GameCore\Menus\UIPopup.cs" />
+    <Compile Include="Assets\_Scripts\FSM\IngameState.cs" />
+    <Compile Include="Assets\_Scripts\Interacts\DialogueConfig.cs" />
     <Compile Include="Assets\_Scripts\SaveLoad\ISerialize.cs" />
+    <Compile Include="Assets\_Scripts\FSM\HomeState.cs" />
+    <Compile Include="Assets\_Scripts\DialogueSystem\Payload.cs" />
     <Compile Include="Assets\_Scripts\Player\States\AbilityState.cs" />
-    <Compile Include="Assets\_Scripts\GameCore\Presentation\Inventory\InventoryScreen.cs" />
+    <Compile Include="Assets\_Scripts\DialogueSystem\GameDialogueState.cs" />
     <Compile Include="Assets\_Scripts\LevelLoaderTest.cs" />
     <Compile Include="Assets\_Scripts\Core\CoreComponents.cs" />
     <Compile Include="Assets\_Scripts\Player\States\Locomotion.cs" />
-    <Compile Include="Assets\_Scripts\GameCore\Presentation\Loading\LoadingViewState.cs" />
-    <Compile Include="Assets\_Scripts\GameCore\Presentation\Loading\LoadingSubPresenter.cs" />
     <Compile Include="Assets\_Scripts\Player\CameraManager.cs" />
     <Compile Include="Assets\_Scripts\Player\StateMachine\ISequence.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerData.cs" />
-    <Compile Include="Assets\_Scripts\GameCore\Presentation\Inventory\InventoryViewState.cs" />
+    <Compile Include="Assets\_Scripts\Managers\CameraController.cs" />
     <Compile Include="Assets\_Scripts\GameCore\UnityServiceLocator\ILocalization.cs" />
+    <Compile Include="Assets\_Scripts\FSM\GameState.cs" />
     <Compile Include="Assets\_Scripts\GameCore\UnityServiceLocator\ServiceLocatorSceneBootstrapper.cs" />
     <Compile Include="Assets\_Scripts\GameCore\UIManager.cs" />
-    <Compile Include="Assets\_Scripts\GameCore\Presentation\Shared\TransitionService.cs" />
-    <Compile Include="Assets\_Scripts\GameCore\Presentation\Home\HomeViewState.cs" />
     <Compile Include="Assets\_Scripts\Gameplay\ItemSO.cs" />
-    <Compile Include="Assets\_Scripts\GameCore\Menus\GameplayMenu.cs" />
     <Compile Include="Assets\_Scripts\Interacts\Bed.cs" />
     <Compile Include="Assets\_Scripts\Gameplay\GlobalEnums\ItemEnums.cs" />
     <Compile Include="Assets\_Scripts\Player\States\InteractState.cs" />
     <Compile Include="Assets\_Scripts\Interacts\WorldItem.cs" />
     <Compile Include="Assets\_Scripts\DayPhase\DayPhase.cs" />
-    <Compile Include="Assets\_Scripts\GameCore\Presentation\Home\HomeScreen.cs" />
+    <Compile Include="Assets\_Scripts\Interacts\LineConfig.cs" />
+    <Compile Include="Assets\_Scripts\GameCore\MVP\UITransition.cs" />
     <Compile Include="Assets\_Scripts\Player\StateMachine\StateMachineBuilder.cs" />
     <Compile Include="Assets\_Scripts\Managers\GameplayManager.cs" />
-    <Compile Include="Assets\_Scripts\GameCore\Presentation\ObjectPreview\PreviewModal.cs" />
+    <Compile Include="Assets\_Scripts\GameCore\MVP\PopupView.cs" />
     <Compile Include="Assets\_Scripts\SaveLoad\IDataService.cs" />
     <Compile Include="Assets\_Scripts\Player\InputReader.cs" />
+    <Compile Include="Assets\_Scripts\Player\States\ConversationState.cs" />
     <Compile Include="Assets\_Scripts\GlobalSettings\Blackboard.cs" />
+    <Compile Include="Assets\_Scripts\GameCore\Menus\MainMenuScreen.cs" />
+    <Compile Include="Assets\_Scripts\DialogueSystem\DialogueController.cs" />
     <Compile Include="Assets\_Scripts\GameCore\UnityServiceLocator\ServiceLocator.cs" />
+    <Compile Include="Assets\_Scripts\GameCore\UnityServiceLocator\InteractMediator.cs" />
     <Compile Include="Assets\_Scripts\Interacts\IItem.cs" />
     <Compile Include="Assets\_Scripts\Player\States\State.cs" />
     <Compile Include="Assets\_Scripts\GlobalSettings\GameManager.cs" />
@@ -136,6 +140,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Library\PackageCache\com.unity.modules.jsonserialize\package.json" />
     <None Include="Library\PackageCache\com.unity.burst@6bb9aca3ef38\package.json" />
+    <None Include="Assets\Fonts\JetBrains_Mono\README.txt" />
     <None Include="Library\PackageCache\com.unity.modules.screencapture\package.json" />
     <None Include="Library\PackageCache\com.unity.modules.cloth\package.json" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
@@ -191,7 +196,9 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\Packages\System.ComponentModel.Annotations.5.0.0\useSharedDesignerContext.txt" />
     <None Include="Library\PackageCache\com.unity.modules.imageconversion\package.json" />
+    <None Include="Assets\LowpolyBakersHouse\Readme.txt" />
     <None Include="Library\PackageCache\com.unity.shadergraph@28ee1cc75774\package.json" />
+    <None Include="Assets\Fonts\JetBrains_Mono\OFL.txt" />
     <None Include="Assets\Packages\System.Threading.Channels.8.0.0\lib\netstandard2.1\System.Threading.Channels.xml" />
     <None Include="Library\PackageCache\com.unity.modules.unityanalytics\package.json" />
     <None Include="Library\PackageCache\com.unity.ide.rider@4504839d03f7\package.json" />
@@ -239,12 +246,12 @@
     <None Include="Library\PackageCache\com.unity.shadergraph@28ee1cc75774\GraphTemplates\Cross Pipeline\GetSceneNormal.hlsl" />
     <None Include="Library\PackageCache\com.unity.modules.unitywebrequestwww\package.json" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\Shaders\UI\CustomUIGradient.shader" />
     <None Include="Library\PackageCache\com.unity.modules.unitywebrequestaudio\package.json" />
     <None Include="Library\PackageCache\com.unity.modules.hierarchycore\package.json" />
     <None Include="Library\PackageCache\com.cysharp.r3@b95751a30ad5\package.json" />
     <None Include="Library\PackageCache\com.unity.ugui@8ccc29d23a79\Editor Resources\Shaders\TMP_SDF_SSD.cginc" />
     <None Include="Library\PackageCache\com.unity.collab-proxy@0b1559bcd34e\ValidationConfig.json" />
-    <None Include="Library\PackageCache\com.zbase.unityscreennavigator@f39e0d3430c8\package.json" />
     <None Include="Library\PackageCache\com.unity.shadergraph@28ee1cc75774\GraphTemplates\Subgraphs\CanvasLinearSpaceConversion.hlsl" />
     <None Include="Library\PackageCache\com.unity.ai.navigation@734c2c4c5591\package.json" />
     <None Include="Library\PackageCache\com.unity.modules.xr\package.json" />
@@ -263,12 +270,12 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Library\PackageCache\com.unity.formats.fbx@9f10493e557a\package.json" />
     <None Include="Library\PackageCache\com.unity.modules.director\package.json" />
+    <None Include="Assets\Fonts\Poppins\OFL.txt" />
     <None Include="Library\PackageCache\com.unity.modules.terrain\package.json" />
     <None Include="Library\PackageCache\com.unity.2d.sprite@d14b9d497a24\package.json" />
     <None Include="Library\PackageCache\com.unity.collections@12999e356c23\package.json" />
     <None Include="Library\PackageCache\com.unity.modules.androidjni\package.json" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
-    <None Include="Library\PackageCache\jp.hadashikick.vcontainer@c1460d42dff7\package.json" />
     <None Include="Library\PackageCache\com.unity.ugui@8ccc29d23a79\PackageConversionData_Assets.json" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\QuickOutline\Resources\Shaders\OutlineFill.shader" />
@@ -1211,13 +1218,13 @@
       <Project>{5fbfd8a7-fc05-ca1d-0e8f-2dfc016d9cbb}</Project>
       <Name>Unity.RenderPipelines.Universal.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Timeline.csproj">
-      <Project>{f8849283-bb4d-1bfb-a308-117df11e5c26}</Project>
-      <Name>Unity.Timeline</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.AI.Navigation.Updater.csproj">
       <Project>{c456d762-937b-f788-6f15-c7e0d09c096c}</Project>
       <Name>Unity.AI.Navigation.Updater</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Timeline.csproj">
+      <Project>{f8849283-bb4d-1bfb-a308-117df11e5c26}</Project>
+      <Name>Unity.Timeline</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.AI.Navigation.Editor.csproj">
       <Project>{85e33514-117e-644a-67a8-8e08d0b39ee0}</Project>
@@ -1227,9 +1234,13 @@
       <Project>{4417ae2e-338a-2da9-6ce5-6e18bb01053d}</Project>
       <Name>Unity.Formats.Fbx.Runtime</Name>
     </ProjectReference>
-    <ProjectReference Include="GameMVP.csproj">
-      <Project>{60d28719-c55d-9426-f47d-013318db3888}</Project>
-      <Name>GameMVP</Name>
+    <ProjectReference Include="Unity.Addressables.csproj">
+      <Project>{b3819c79-2fb7-c767-f81a-0204408acee4}</Project>
+      <Name>Unity.Addressables</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Animation.Rigging.Editor.csproj">
+      <Project>{2fa2fb3d-e4a1-5322-c3ac-9cc3f486d15c}</Project>
+      <Name>Unity.Animation.Rigging.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="R3.Unity.csproj">
       <Project>{80df8043-247d-7511-aa98-f0aa8fe04462}</Project>
@@ -1239,9 +1250,9 @@
       <Project>{c970052d-bad1-b6c5-db43-c1e58f28340a}</Project>
       <Name>Unity.RenderPipelines.Core.Runtime.Shared</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Addressables.csproj">
-      <Project>{b3819c79-2fb7-c767-f81a-0204408acee4}</Project>
-      <Name>Unity.Addressables</Name>
+    <ProjectReference Include="PPv2URPConverters.csproj">
+      <Project>{5fa089b4-f41d-b37a-23b0-eb674e90cbaf}</Project>
+      <Name>PPv2URPConverters</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Universal.2D.Runtime.csproj">
       <Project>{b26b4ee4-a8ea-99e3-6659-3ceb6a05eda6}</Project>
@@ -1255,10 +1266,6 @@
       <Project>{77a6db99-9367-812b-083c-3521693ffb98}</Project>
       <Name>Unity.ScriptableBuildPipeline.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="PPv2URPConverters.csproj">
-      <Project>{5fa089b4-f41d-b37a-23b0-eb674e90cbaf}</Project>
-      <Name>PPv2URPConverters</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.Searcher.Editor.csproj">
       <Project>{035b1900-1690-3993-8230-13a2a99e6924}</Project>
       <Name>Unity.Searcher.Editor</Name>
@@ -1266,10 +1273,6 @@
     <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
       <Project>{157b89ef-c756-76a1-a20d-4ca428838809}</Project>
       <Name>Unity.PlasticSCM.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="ZBase.UnityScreenNavigator.Editor.csproj">
-      <Project>{e453de5a-d0ac-300c-9da4-ca66090c1f9e}</Project>
-      <Name>ZBase.UnityScreenNavigator.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Burst.Editor.csproj">
       <Project>{fa2a0913-4b0c-8069-f1c6-5a2c1989de55}</Project>
@@ -1287,10 +1290,6 @@
       <Project>{9f21b27b-09ff-f3e9-b66f-98a44173355d}</Project>
       <Name>Unity.Cinemachine.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="VContainer.Editor.csproj">
-      <Project>{d1ff3c9a-fa19-9319-7eb8-017aa4b9ab14}</Project>
-      <Name>VContainer.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.UnifiedRayTracing.Runtime.csproj">
       <Project>{a3a0115e-d82a-c0b6-1ed4-ba2c5a383c40}</Project>
       <Name>Unity.UnifiedRayTracing.Runtime</Name>
@@ -1302,10 +1301,6 @@
     <ProjectReference Include="Unity.Cinemachine.csproj">
       <Project>{1914c305-5c70-bcac-7c92-4672d9b26f68}</Project>
       <Name>Unity.Cinemachine</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Animation.Rigging.Editor.csproj">
-      <Project>{2fa2fb3d-e4a1-5322-c3ac-9cc3f486d15c}</Project>
-      <Name>Unity.Animation.Rigging.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Animation.Rigging.csproj">
       <Project>{c5395d7c-5c67-6bbc-d6f2-b94e9d547abf}</Project>
@@ -1443,10 +1438,6 @@
       <Project>{5799074c-59a6-ae48-7900-a268ed5f38d9}</Project>
       <Name>Unity.RenderPipelines.Universal.Runtime</Name>
     </ProjectReference>
-    <ProjectReference Include="ZBase.UnityScreenNavigator.csproj">
-      <Project>{892b96ad-c11e-2717-62c3-0e3c0bd6ff1a}</Project>
-      <Name>ZBase.UnityScreenNavigator</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Universal.Config.Runtime.csproj">
       <Project>{73ab4dd1-58da-f2f5-a048-878994b85618}</Project>
       <Name>Unity.RenderPipelines.Universal.Config.Runtime</Name>
@@ -1474,10 +1465,6 @@
     <ProjectReference Include="Unity.ShaderGraph.Editor.csproj">
       <Project>{187357c0-4c02-eb5e-b98b-910ffce604d9}</Project>
       <Name>Unity.ShaderGraph.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="VContainer.csproj">
-      <Project>{faa61290-4700-3b18-4bf6-998873b956f5}</Project>
-      <Name>VContainer</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Core.Editor.Shared.csproj">
       <Project>{43eba26e-e5eb-0e04-911a-c807b344972e}</Project>

@@ -8,9 +8,9 @@ using UnityEngine;
 public class WorldItem : MonoBehaviour, IItem
 {
     [Header("Item Data")] public ItemSO itemData;
+    [SerializeField] private Outline outline;
     public ItemSO Item => itemData;
 
-    [Header("Optional Highlight")] public Renderer[] highlightRenderers;
     public Color highlightColor = Color.yellow;
 
     private Collider _collider;
@@ -26,9 +26,7 @@ public class WorldItem : MonoBehaviour, IItem
     {
         _collider = GetComponent<Collider>();
         _rigidbody = GetComponent<Rigidbody>();
-
-        if (highlightRenderers == null || highlightRenderers.Length == 0)
-            highlightRenderers = GetComponentsInChildren<Renderer>();
+        OnValidate();
 
         _mpb = new MaterialPropertyBlock();
     }
@@ -62,13 +60,9 @@ public class WorldItem : MonoBehaviour, IItem
 
     public void SetHighlighted(bool on)
     {
-        foreach (var r in highlightRenderers)
-        {
-            if (r == null) continue;
-            r.GetPropertyBlock(_mpb);
-            _mpb.SetColor("_EmissionColor", on ? highlightColor : Color.black);
-            r.SetPropertyBlock(_mpb);
-        }
+        var mode = outline.OutlineMode;
+        mode = on? Outline.Mode.OutlineVisible : Outline.Mode.OutlineHidden;
+        outline.OutlineMode = mode;
     }
 
     public Transform Transform => transform;
@@ -82,8 +76,7 @@ public class WorldItem : MonoBehaviour, IItem
     }
 
     public bool CanPerform() => true;
-
-
+    
     public void Interact(InteractContext context)
     {
         CacheOriginalTransform();
@@ -92,5 +85,10 @@ public class WorldItem : MonoBehaviour, IItem
         transform.SetParent(context.NewTransform, worldPositionStays: false);
         transform.localPosition = context.Offset;
         transform.localRotation = Quaternion.identity;
+    }
+
+    private void OnValidate()
+    {
+        if(outline == null) outline = GetComponent<Outline>();
     }
 }

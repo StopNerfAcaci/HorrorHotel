@@ -1,5 +1,4 @@
-﻿using GameCore.Presentation.Shared;
-
+﻿
 namespace HSM
 {
     public class PlayerRoot : State
@@ -7,14 +6,12 @@ namespace HSM
         public readonly PlayerStateDriver player;
         public readonly Locomotion Locomotion;
         public readonly AbilityState AbilityState;
-        public readonly TransitionService TransitionService;
 
         public PlayerRoot(StateMachine machine, PlayerStateDriver player) : base(machine, null)
         {
             this.player = player;
             core = player.Core;
             var data = player.Data;
-            TransitionService = new TransitionService();
             Locomotion = new Locomotion(machine, this, player, data);
             AbilityState = new AbilityState(machine, this, player);
         }

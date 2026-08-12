@@ -25,6 +25,7 @@ namespace HSM
         public bool IsBusy => isBusy;
         public bool HasInteractable { get; set; }
 
+
         private void Awake()
         {
             SetupComponents();
@@ -56,9 +57,9 @@ namespace HSM
         }
 
 
-        private void Update()
+        internal void OnUpdate()
         {
-            if (inputReader == null || Machine == null) return;
+            if (inputReader == null || Machine == null || isBusy) return;
 
             Machine.Tick(Time.deltaTime);
             Core.LogicUpdate();
@@ -100,15 +101,15 @@ namespace HSM
         static string StatePath(State s)
             => string.Join(" > ", s.PathToRoot().AsEnumerable().Reverse().Select(path => path.GetType().Name));
 
-        private void OnApplicationFocus(bool hasFocus)
-        {
-            SetCursorState(cursorLocked);
-        }
-
-        private void SetCursorState(bool newState)
-        {
-            Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;
-        }
+        // private void OnApplicationFocus(bool hasFocus)
+        // {
+        //     SetCursorState(cursorLocked);
+        // }
+        //
+        // private void SetCursorState(bool newState)
+        // {
+        //     Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;
+        // }
 
         internal void SetBusy(bool busy) => isBusy = busy;
         

@@ -57,10 +57,8 @@
     <Compile Include="Assets\_Scripts\GameCore\MVP\Presenter.cs" />
     <Compile Include="Assets\_Scripts\GameCore\MVP\ModalPresenter.cs" />
     <Compile Include="Assets\_Scripts\GameCore\MVP\SheetPresenter.cs" />
-    <Compile Include="Assets\_Scripts\GameCore\MVP\ActivityPresenter.cs" />
     <Compile Include="Assets\_Scripts\GameCore\MVP\Modal.cs" />
     <Compile Include="Assets\_Scripts\GameCore\MVP\AppView.cs" />
-    <Compile Include="Assets\_Scripts\GameCore\MVP\ScreenPresenter.cs" />
     <None Include="Assets\_Scripts\GameCore\MVP\GameMVP.asmdef" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\6000.3.14f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
@@ -970,10 +968,6 @@
     <ProjectReference Include="UniTask.csproj">
       <Project>{06329e31-32ac-d266-99f8-11f4dc91633d}</Project>
       <Name>UniTask</Name>
-    </ProjectReference>
-    <ProjectReference Include="ZBase.UnityScreenNavigator.csproj">
-      <Project>{892b96ad-c11e-2717-62c3-0e3c0bd6ff1a}</Project>
-      <Name>ZBase.UnityScreenNavigator</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{706f2e85-7f52-71a7-7644-de7001893efd}</Project>

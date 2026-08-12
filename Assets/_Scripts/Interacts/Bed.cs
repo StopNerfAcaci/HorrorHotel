@@ -38,4 +38,9 @@ public class Bed : MonoBehaviour, IEnvironment
         _gameplayManager.HandleNextPhase();
         _col.enabled = false;
     }
+
+    public void SetHighlighted(bool on)
+    {
+        
+    }
 }

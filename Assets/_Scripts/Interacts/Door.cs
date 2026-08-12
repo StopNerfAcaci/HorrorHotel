@@ -29,6 +29,11 @@ public class Door : MonoBehaviour, IEnvironment
         }
     }
 
+    public void SetHighlighted(bool on)
+    {
+        
+    }
+
     private void ResetDoor()
     {
         if(!isToggleDoor) return;

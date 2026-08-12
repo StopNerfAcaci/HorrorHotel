@@ -7,7 +7,8 @@ namespace GlobalSettings
     {
         public void QuitLevel()
         {
-            //TODO: quit logic
+            if (Application.isEditor) return;
+            if (Application.isPlaying) Application.Quit();
         }
 
         public void PauseGame(bool isPause)
