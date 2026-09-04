@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5d05dd8f4664a5489fc7d2be6dd538b, type: 3}
+  m_Name: Gameplay
+  m_EditorClassIdentifier: Assembly-CSharp::GlobalSettings.Gameplay
+  days:
+  - day: 1
+    isDaytime: 1
+    requireItems:
+    - {fileID: 11400000, guid: e7bee8879c28d3440bff952c2249247b, type: 2}
+  - day: 1
+    isDaytime: 0
+    requireItems:
+    - {fileID: 11400000, guid: 3bc7ac5c27217e74e8d4e3e3907325d4, type: 2}
