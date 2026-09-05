@@ -104,3 +104,6 @@ InitTestScene*.unity*
 
 # Auto-generated cache in Assets folder
 /[Aa]ssets/[Ss]ceneDependencyCache*
+Logs/AssetImportWorker1.log
+Logs/shadercompiler-AssetImportWorker1-0.log
+Logs/shadercompiler-UnityShaderCompiler.exe-0.log
