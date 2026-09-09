@@ -51,11 +51,11 @@ namespace Project.Player
             inputReader = player.Reader;
         }
 
-        private void Start()
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-        }
+        // private void Start()
+        // {
+        //     Cursor.lockState = CursorLockMode.Locked;
+        //     Cursor.visible = false;
+        // }
 
         private void OnEnable()
         {

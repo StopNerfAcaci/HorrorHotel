@@ -42,22 +42,22 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="Library\PackageCache\com.unity.collections@12999e356c23\Unity.Collections.Tests\System.Runtime.CompilerServices.Unsafe\System.Runtime.CompilerServices.Unsafe.xml" />
-    <None Include="Library\PackageCache\com.unity.collections@12999e356c23\Unity.Collections.Tests\NativeSortTests.tt" />
-    <None Include="Library\PackageCache\com.unity.collections@12999e356c23\Unity.Collections.Tests\FixedListTests.tt" />
-    <None Include="Library\PackageCache\com.unity.collections@12999e356c23\Unity.Collections.Tests\System.IO.Hashing\System.IO.Hashing.xml" />
-    <None Include="Library\PackageCache\com.unity.collections@12999e356c23\Unity.Collections.Tests\FixedStringSizedTests.tt" />
-    <None Include="Library\PackageCache\com.unity.collections@12999e356c23\Unity.Collections.Tests\Unity.Collections.Tests.asmdef" />
-    <None Include="Library\PackageCache\com.unity.collections@12999e356c23\Unity.Collections.Tests\NativeParallelHashSetTests.tt" />
-    <None Include="Library\PackageCache\com.unity.collections@12999e356c23\Unity.Collections.Tests\NativeHashSetTests.tt" />
+    <None Include="Library\PackageCache\com.unity.collections@9796e5ee0d9e\Unity.Collections.Tests\System.Runtime.CompilerServices.Unsafe\System.Runtime.CompilerServices.Unsafe.xml" />
+    <None Include="Library\PackageCache\com.unity.collections@9796e5ee0d9e\Unity.Collections.Tests\NativeSortTests.tt" />
+    <None Include="Library\PackageCache\com.unity.collections@9796e5ee0d9e\Unity.Collections.Tests\FixedListTests.tt" />
+    <None Include="Library\PackageCache\com.unity.collections@9796e5ee0d9e\Unity.Collections.Tests\System.IO.Hashing\System.IO.Hashing.xml" />
+    <None Include="Library\PackageCache\com.unity.collections@9796e5ee0d9e\Unity.Collections.Tests\FixedStringSizedTests.tt" />
+    <None Include="Library\PackageCache\com.unity.collections@9796e5ee0d9e\Unity.Collections.Tests\Unity.Collections.Tests.asmdef" />
+    <None Include="Library\PackageCache\com.unity.collections@9796e5ee0d9e\Unity.Collections.Tests\NativeParallelHashSetTests.tt" />
+    <None Include="Library\PackageCache\com.unity.collections@9796e5ee0d9e\Unity.Collections.Tests\NativeHashSetTests.tt" />
     <Reference Include="UnityEngine">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.3.14f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.3.20f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.3.14f1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.3.20f1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.3.14f1\Editor\Data\Managed\UnityEngine\UnityEditor.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.3.20f1\Editor\Data\Managed\UnityEngine\UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

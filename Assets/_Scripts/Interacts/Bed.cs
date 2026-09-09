@@ -1,46 +1,48 @@
-using System;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
-using UnityServiceLocator;
 using VitalRouter;
 
-
-public class Bed : MonoBehaviour, IEnvironment
+public class Bed : MonoBehaviour, IInteractable
 {
+    [SerializeField] private ItemSO item;
     [SerializeField] private float delay = 2f;
-    
+    [SerializeField] private string playerAnimName;
     private Collider _col;
-    public float Delay => delay;
-    
-    private GameplayManager _gameplayManager;
+    public bool IsCutScene => false;
+    public string PlayerAnimName => playerAnimName;
+
+    public ItemSO Item => item;
+    public Transform Transform => transform;
     private Router _publisher;
+
     private void Awake()
     {
         _col = GetComponent<Collider>();
         _col.enabled = true;
     }
+    
 
-    private void Start()
+    public UniTask Confirm()
     {
-        ServiceLocator.For(this).Get<GameplayManager>(out _gameplayManager);
-        ServiceLocator.For(this).Get<Router>(out _publisher);
+        GameplayManager.Instance?.HandleNextPhase();
+        _col.enabled = false;
+        return UniTask.CompletedTask;
     }
 
-    public bool CanPerform() => _gameplayManager.CanMoveNextPhase();
+    public bool CanInteract() => GameplayManager.Instance.CanMoveNextPhase();
 
     public void Interact(InteractContext ctx)
     {
-        if (!CanPerform())
+        if (!CanInteract())
         {
             Debug.Log("Require all current progress done");
             // _publisher.PublishAsync(new PopupCommand(PopupType.NotDoneProgress));
             return;
         }
-        _gameplayManager.HandleNextPhase();
-        _col.enabled = false;
+
     }
 
     public void SetHighlighted(bool on)
     {
-        
     }
 }

@@ -1,26 +1,34 @@
 using Cysharp.Threading.Tasks;
+using HSM;
+using UnityEngine;
 
 public class IngameState : GameState
 {
     private GameplayManager _manager;
-    
-    public IngameState(GameplayManager manager)
+    private readonly PlayerStateDriver player; 
+    public IngameState(GameplayManager manager, PlayerStateDriver player)
     {
         _manager = manager;
+        this.player = player;
     }
 
     public override void OnEnter()
     {
-        _ = OnEnterAsync();
-    }
-
-    private async UniTask OnEnterAsync()
-    {
-        _manager.SwitchToPlayerCam();
     }
 
     public override void OnUpdate()
     {
-        _manager.Player.OnUpdate();
+        player.OnUpdate();
+    }
+
+    public override void OnFixedUpdate()
+    {
+        player.OnFixedUpdate();
+    }
+
+    public override void OnLateUpdate()
+    {
+        if (player.IsBusy) return;
+        _manager.LateUpdateInternal();
     }
 }

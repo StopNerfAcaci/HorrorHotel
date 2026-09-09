@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ffc1514b3bc4c45ae1c99fd4b383404, type: 3}
   m_Name: PlayerData
   m_EditorClassIdentifier: HSM::HSM.PlayerData
-  MoveSpeed: 4
-  SprintSpeed: 6
+  MoveSpeed: 3
+  SprintSpeed: 4.5
   RotationSpeed: 1
   SpeedChangeRate: 10
   JumpHeight: 1.2

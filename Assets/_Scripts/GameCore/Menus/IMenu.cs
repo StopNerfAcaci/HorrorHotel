@@ -1,8 +1,8 @@
 using GameCore.MVP;
 
-public interface IMenu<TScreen> where TScreen : UIView
+public interface IMenu
 {
-    void Setup(TScreen owner);
+    void Setup(UIManager owner);
     
     void Show();
     void Hide();

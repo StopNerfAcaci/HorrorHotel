@@ -42,18 +42,18 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="Library\PackageCache\com.unity.render-pipelines.universal@3b809f23691d\Tests\Editor\CustomDepthBlit.shader" />
-    <None Include="Library\PackageCache\com.unity.render-pipelines.universal@3b809f23691d\Tests\Editor\PostProcessDataTests\1.shader" />
-    <None Include="Library\PackageCache\com.unity.render-pipelines.universal@3b809f23691d\Tests\Editor\Unity.RenderPipelines.Universal.Editor.Tests.asmdef" />
-    <None Include="Library\PackageCache\com.unity.render-pipelines.universal@3b809f23691d\Tests\Editor\PostProcessDataTests\2.shader" />
+    <None Include="Library\PackageCache\com.unity.render-pipelines.universal@37e06a5b08b3\Tests\Editor\CustomDepthBlit.shader" />
+    <None Include="Library\PackageCache\com.unity.render-pipelines.universal@37e06a5b08b3\Tests\Editor\PostProcessDataTests\1.shader" />
+    <None Include="Library\PackageCache\com.unity.render-pipelines.universal@37e06a5b08b3\Tests\Editor\Unity.RenderPipelines.Universal.Editor.Tests.asmdef" />
+    <None Include="Library\PackageCache\com.unity.render-pipelines.universal@37e06a5b08b3\Tests\Editor\PostProcessDataTests\2.shader" />
     <Reference Include="UnityEngine">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.3.14f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.3.20f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.3.14f1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.3.20f1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.3.14f1\Editor\Data\Managed\UnityEngine\UnityEditor.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.3.20f1\Editor\Data\Managed\UnityEngine\UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

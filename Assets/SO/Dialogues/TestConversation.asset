@@ -12,12 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e89f44bb92e4a7cb69bc6f97847f55e, type: 3}
   m_Name: TestConversation
   m_EditorClassIdentifier: Assembly-CSharp::ConversationConfig
-  _configs:
-  - dialogueID: 0
-    dialogue: Hello, you new here
-    displayDuration: 1
-    sound: 0
-  - dialogueID: 1
-    dialogue: Me too, just chilling around
-    displayDuration: 0
-    sound: 0
+  conversationDatas:
+  - conversationId: 0
+    dialogueIdAfterDoneConversation: 1
+    lines:
+    - dialogueID: 0
+      dialogue: Hello
+      displayDuration: -1
+      sound: -1
+    - dialogueID: 1
+      dialogue: Goodbye
+      displayDuration: -1
+      sound: -1

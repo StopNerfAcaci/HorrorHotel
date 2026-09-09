@@ -1,4 +1,6 @@
+using System;
 using UnityEngine;
+using UnityEngine.Events;
 using VitalRouter;
 
 public enum PopupType
@@ -19,17 +21,36 @@ public readonly struct PopupCommand : ICommand
 
 public class UIManager : MonoBehaviour
 {
-    [SerializeField] private UIContainer container;
-    private GameplayManager gameplayManager;
-    public GameplayManager GameplayManager => gameplayManager;
-
-    private DialogueController dialogueController;
-    public DialogueController DialogueController => dialogueController;
-
-    private void Awake()
+    public event UnityAction OnStartGame;
+    [SerializeField] private MaingameScreen maingameScreen;
+    [SerializeField] private HomeScreen homeScreen;
+    
+    private void Start()
     {
-        gameplayManager = FindAnyObjectByType<GameplayManager>();
-        dialogueController = new DialogueController();
-        container?.Setup(this);
+        maingameScreen?.Setup(this);
+        homeScreen?.Setup(this);
+    }
+
+    private void OnEnable()
+    {
+        if(homeScreen)
+        {
+            homeScreen.OnStartGame += ShowIngameScreen;
+        }
+    }
+
+    private void OnDisable()
+    {
+        if (homeScreen)
+        {
+            homeScreen.OnStartGame -= ShowIngameScreen;
+        }
+    }
+
+    public void ShowIngameScreen()
+    {
+        homeScreen.Hide();
+        maingameScreen.Show();
+        OnStartGame?.Invoke();
     }
 }

@@ -1,21 +1,15 @@
-using System;
 using System.Collections.Generic;
-using UnityEngine;
-using VitalRouter;
+using Horror.Events;
 
-//Event base state machine
-[Routes]
-public partial class GameStateMachine
+public class GameStateMachine
 {
-    
     private readonly Dictionary<GameStateType, GameState> _states;
     private GameState _currentState;
 
-    public GameState CurrentState => _currentState;
     public GameStateMachine(GameplayManager manager)
     {
         HomeState home = new HomeState(manager);
-        IngameState inGame = new IngameState(manager);
+        IngameState inGame = new IngameState(manager, manager.Player);
         WinState win = new WinState();
         LoseState lose = new LoseState();
         _states = new()
@@ -25,33 +19,33 @@ public partial class GameStateMachine
             [GameStateType.Win] = win,
             [GameStateType.Lose] = lose
         };
-        manager.FSM = this;
         ChangeState(GameStateType.Home);
     }
-    
-    private void ChangeState(GameStateType type)
+
+    public GameStateType CurrentStateType { get; private set; }
+
+    internal void ChangeState(GameStateType type)
     {
         if (_currentState == _states[type])
             return;
         _currentState?.OnExit();
         _currentState = _states[type];
         _currentState.OnEnter();
-        Debug.Log($"Changing state to " + _currentState);
     }
-    
-    [Route]
-    public void On(ChangeStateCommand command)
-    {
-        ChangeState(command.StateType);
-    }
-    
+
     public void Tick()
     {
         _currentState?.OnUpdate();
     }
+
     public void FixedTick() => _currentState?.OnFixedUpdate();
     public void LateTick() => _currentState?.OnLateUpdate();
+
+    public void Dispose()
+    {
+    }
 }
+
 public enum GameStateType
 {
     Unknown = 0,

@@ -1,37 +1,46 @@
-﻿using Utils.Helpers;
+﻿using Gameplay.CoreSystem;
+using Sirenix.Utilities;
+using Utils.Helpers;
 
 namespace HSM
 {
     public class CutsceneState : State
     {
         private readonly PlayerStateDriver player;
-        
+        private AnimationHandler animationHandler;
         private bool isSceneDone = false;
-        private IEnvironment environment;
+        private IInteractable interactable;
         private float timer;
         private bool isTicking;
+
+        public AnimationHandler AnimationHandler => animationHandler ?? core.GetCoreComponent<AnimationHandler>();
+
         public CutsceneState(StateMachine machine, State parent, PlayerStateDriver player) : base(machine, parent)
         {
             this.player = player;
+            core = player.Core;
         }
 
         protected override void OnEnter()
         {
             isSceneDone = false;
-            var root = (PlayerRoot)Parent.Parent;
-            environment = root.PendingInteractable as IEnvironment;
-            root.PendingInteractable = null;
-            timer = environment.Delay;
-            isTicking = true;
+            interactable = player.GetInteractable<CutScene>();
+            if (interactable != null && !interactable.PlayerAnimName.IsNullOrWhitespace())
+            {
+                AnimationHandler.SmoothChangeAnim(interactable.PlayerAnimName);
+                timer = 2f;
+                isTicking = true;
+            }
         }
 
         protected override void OnExit()
         {
+            AnimationHandler.StopAnim();
         }
 
         protected override void OnUpdate(float deltaTime)
         {
-            if(!isTicking) return;
+            if (!isTicking) return;
             timer -= deltaTime;
             if (timer <= 0)
             {

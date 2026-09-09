@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Linq;
 using Gameplay.CoreSystem;
-using R3;
+using Horror.Events;
+using Sirenix.Utilities;
 using UnityEngine;
-using UnityServiceLocator;
 
 namespace HSM
 {
@@ -12,7 +12,7 @@ namespace HSM
         [SerializeField] private InputReader inputReader;
         [SerializeField] private PlayerData data;
         [SerializeField] private bool cursorLocked = true;
-
+        [SerializeField] private bool inDebugMode = false;
         public Core Core { get; private set; }
 
         private StateMachine Machine;
@@ -23,12 +23,11 @@ namespace HSM
         public PlayerData Data => data;
         private bool isBusy = false;
         public bool IsBusy => isBusy;
-        public bool HasInteractable { get; set; }
 
+        private IInteractable _interactable;
 
         private void Awake()
         {
-            SetupComponents();
             SetupCore();
             SetupMachine();
         }
@@ -56,10 +55,21 @@ namespace HSM
             inputReader.DisablePlayerActions();
         }
 
+        private void Update()
+        {
+            if (!inDebugMode) return;
+            OnUpdate();
+        }
+
+        private void FixedUpdate()
+        {
+            if(!inDebugMode) return;
+            OnFixedUpdate();
+        }
 
         internal void OnUpdate()
         {
-            if (inputReader == null || Machine == null || isBusy) return;
+            if (inputReader == null || Machine == null) return;
 
             Machine.Tick(Time.deltaTime);
             Core.LogicUpdate();
@@ -71,16 +81,10 @@ namespace HSM
                 lastPath = path;
             }
         }
-
-        private void FixedUpdate()
+        internal void OnFixedUpdate()
         {
-            Machine.FixedTick(Time.fixedDeltaTime);
+            Machine?.FixedTick(Time.fixedDeltaTime);
         }
-
-        private void SetupComponents()
-        {
-        }
-
 
         public float GetSpeed() => Reader.Sprint ? data.SprintSpeed : data.MoveSpeed;
 
@@ -95,23 +99,33 @@ namespace HSM
             var builder = new StateMachineBuilder(root);
             Machine = builder.Build();
         }
-
-
+        
         //This to help knowing the current state. Only call when debug for optimization
         static string StatePath(State s)
             => string.Join(" > ", s.PathToRoot().AsEnumerable().Reverse().Select(path => path.GetType().Name));
 
-        // private void OnApplicationFocus(bool hasFocus)
-        // {
-        //     SetCursorState(cursorLocked);
-        // }
-        //
-        // private void SetCursorState(bool newState)
-        // {
-        //     Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;
-        // }
 
         internal void SetBusy(bool busy) => isBusy = busy;
+        
+        public bool CanPerformAnim() => _interactable != null && !_interactable.PlayerAnimName.IsNullOrWhitespace();
+
+        public T GetInteractable<T>() where T : IInteractable
+        {
+            if (_interactable is T typed)
+                return typed;
+
+            throw new InvalidCastException(
+                $"Interactable of type {_interactable?.GetType().Name} does not implement {typeof(T).Name}");
+        }
+        public bool TryGetInteractable<T>(out T result) where T : class, IInteractable
+        {
+            result = _interactable as T;
+            return result != null;
+        }
+        public void SetInteractable(IInteractable interactable)
+        {
+            this._interactable = interactable;
+        }
         
     }
 }

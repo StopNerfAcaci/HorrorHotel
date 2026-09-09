@@ -10,21 +10,19 @@ public class HomeState : GameState
     }
     public override void OnEnter()
     {
-        _ = ShowHomeAsync();
     }
 
     public override void OnExit()
     {
-        _ = ExitAsync();
     }
 
-    private async UniTask ExitAsync()
-    {
-    }
-
-    private async UniTask ShowHomeAsync()
-    {
-        //TODO: Show home menu UI
-        //TODO: Start home music
-    }
+    // private async UniTask ExitAsync()
+    // {
+    // }
+    //
+    // private async UniTask ShowHomeAsync()
+    // {
+    //     //TODO: Show home menu UI
+    //     //TODO: Start home music
+    // }
 }

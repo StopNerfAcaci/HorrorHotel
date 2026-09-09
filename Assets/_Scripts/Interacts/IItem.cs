@@ -1,9 +1,7 @@
-﻿using Cysharp.Threading.Tasks;
-using UnityEngine;
+using Cysharp.Threading.Tasks;
 
 public interface IItem : IInteractable
 {
     ItemSO Item { get; }
-    Transform Transform { get; }
-    UniTask Use();
+    UniTask Confirm();
 }

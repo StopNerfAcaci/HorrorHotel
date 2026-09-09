@@ -1,45 +1,44 @@
-using System;
 using Cysharp.Threading.Tasks;
 using DG.Tweening;
 using GameCore.MVP;
+using Horror.Events;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityServiceLocator;
 using Utils.Extensions;
-using VitalRouter;
 
-[Routes]
-public partial class ObjectPreviewMenu : UIView, IMenu<UIContainer>
+public class ObjectPreviewMenu : UIView
 {
     [SerializeField] private TextMeshProUGUI objectNameTxt;
     [SerializeField] private TextMeshProUGUI descriptionTxt;
     [SerializeField] private Image backdrop;
     [SerializeField] private GameObject container;
     
-    private Router router;
-    private ItemSO item;
-
-    public void Setup(UIContainer uiContainer)
+    public void Setup(UIManager manager)
     {
         container.SetActive(false);
-        ServiceLocator.For(this).Get<Router>(out router);
-        MapTo(router);
-    }
-    private void OnDestroy() => UnmapRoutes();
-    [Route]
-    private void On(ItemInteractionStartedCommand cmd)
-    {
-        item = cmd.ItemData;
-        Show();
+        EventBus.Register<HideMenuEventData>(HideMenu);
     }
 
-    [Route]
-    private void On(ItemInteractionEndedCommand cmd)
+    private void HideMenu(HideMenuEventData obj)
     {
         Hide();
     }
+
+    public void Inspect(ItemSO itemData)
+    {
+        objectNameTxt.text = itemData.displayName;
+        descriptionTxt.text = itemData.description;
+        backdrop.SetActive(true);
+        Show();
+    }
     
+    protected override void OnDestroy()
+    {
+        EventBus.InRegister<HideMenuEventData>(HideMenu);
+    }
+
+
     public void Show()
     {
         gameObject.SetActive(true);
@@ -49,15 +48,12 @@ public partial class ObjectPreviewMenu : UIView, IMenu<UIContainer>
     private async UniTask ShowAsync()
     {
         await backdrop.DOFade(0, .4f);
-
-        objectNameTxt.text = item.displayName;
-        descriptionTxt.text = item.description;
+        backdrop.SetActive(false);
         container.SetActive(true);
     }
 
     public void Hide()
     {
         gameObject.SetActive(false);
-        // _ = HideAsync();
     }
 }

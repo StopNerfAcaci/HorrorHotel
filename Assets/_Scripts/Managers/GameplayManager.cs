@@ -1,43 +1,33 @@
 using System;
-using System.Collections.Generic;
 using GlobalSettings;
 using HSM;
-using Sirenix.OdinInspector;
+using TMPro;
 using UnityEngine;
-using UnityServiceLocator;
-using VitalRouter;
 
-[DefaultExecutionOrder(-1)]
 public class GameplayManager : MonoBehaviour
 {
+    public static GameplayManager Instance;
     public event Action<string> OnDayPhaseChanged;
-
+    [SerializeField] private UIManager uiManager;
     [SerializeField] private CameraController camController;
     [SerializeField] private GlobalSettings.Gameplay gameplay;
     [SerializeField] private PlayerStateDriver player;
     public PlayerStateDriver Player => player;
-
+    public UIManager UIManager => uiManager;
     private DayPhase currentDayPhase;
     private int currentDayIndex = -1;
 
     public GameStateMachine FSM { get; set; }
-
-#if UNITY_EDITOR
-    private void OnValidate()
-    {
-        if (player == null)  player = FindAnyObjectByType<PlayerStateDriver>(FindObjectsInactive.Include);
-    }
-#endif
     private void Awake()
     {
-        Inventory.Get().LoadInventory();
-
-        ServiceLocator.Global.Register<GameplayManager>(this);
-
+        Instance = this;
+        FSM = new GameStateMachine(this);
         if (gameplay.TryLoadDay(out currentDayPhase))
         {
             currentDayIndex = FindIndex(currentDayPhase);
         }
+        // Inventory.Get().LoadInventory();
+        camController.SwitchCam(false);
     }
 
     private void Start()
@@ -48,9 +38,46 @@ public class GameplayManager : MonoBehaviour
             currentDayPhase = gameplay.Days[0];
             gameplay.SaveDay(currentDayPhase);
         }
-
-        FSM = new GameStateMachine(this);
         OnDayPhaseChanged?.Invoke(currentDayPhase.GetDayString());
+    }
+
+    private void OnEnable()
+    {
+        if (uiManager)
+        {
+            uiManager.OnStartGame += StartGame;
+        }
+    }
+
+    private void StartGame()
+    {
+        SwitchToPlayerCam();
+        FSM.ChangeState(GameStateType.InGame);
+    }
+
+    private void Update()
+    {
+        FSM.Tick();
+    }
+ 
+    private void FixedUpdate()
+    {
+        FSM.FixedTick();
+    }
+
+    private void LateUpdate()
+    {
+        FSM.LateTick();
+    }
+
+    private void OnDestroy()
+    {
+        FSM.Dispose();
+    }
+
+    internal void LateUpdateInternal()
+    {
+        camController.OnLateUpdate(Time.deltaTime);
     }
 
     private int FindIndex(DayPhase phase)
@@ -88,22 +115,16 @@ public class GameplayManager : MonoBehaviour
         gameplay.SaveDay(currentDayPhase);
         OnDayPhaseChanged?.Invoke(currentDayPhase.GetDayString());
     }
-
-    [Button]
+    [ContextMenu("Reset data")]
     public void ResetAllData()
     {
         PlayerPrefs.DeleteAll();
         PlayerPrefs.Save();
     }
 
-    public void SwitchToPlayerCam()
+    private void SwitchToPlayerCam()
     {
         camController.SwitchCam(true);
     }
-}
-
-public struct ChangeStateCommand : ICommand
-{
-    public GameStateType StateType { get; }
-    public ChangeStateCommand(GameStateType stateType) => StateType = stateType;
+    
 }

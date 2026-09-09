@@ -17,9 +17,6 @@ namespace HSM
         }
         
         
-        public IInteractable PendingInteractable { get; set; }
-
         protected override State GetInitialState() => Locomotion;
-        
     }
 }

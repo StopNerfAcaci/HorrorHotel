@@ -1,23 +1,43 @@
-    using GameCore.MVP;
+using GameCore.MVP;
+using GlobalSettings;
 using UnityEngine;
-using Utils.Extensions;
+using UnityEngine.Events;
 
-public class HomeScreen : UIView, IMenu<UIContainer>
+public class HomeScreen : UIView
 {
-    private IMenu<HomeScreen>[] homeMenus;
+    [SerializeField] private GameObject mainMenuContainer;
+    [SerializeField] SettingMenu settingMenu;
+    [SerializeField] HomeButton startButton;
+    [SerializeField] HomeButton settingButton;
+    [SerializeField] HomeButton creditButton;
+    [SerializeField] HomeButton quitButton;
+    public UnityAction OnStartGame;
 
-    public void Setup(UIContainer owner)
+    public void Setup(UIManager owner)
     {
-        homeMenus = GetComponentsInChildren<IMenu<HomeScreen>>(true);
-
-        foreach (var menu in homeMenus)
-        {
-            if (menu == null) continue;
-            menu.Setup(this);
-        }
-        ShowMenu<MainMenuScreen>();
+        startButton.Setup(StartGame);
+        settingButton.Setup(OpenSetting);
+        creditButton.Setup(OpenCredit);
+        quitButton.Setup(GameManager.Get().QuitLevel);
+        mainMenuContainer.SetActive(true);
+        settingMenu.Setup(owner);
+        settingMenu.Hide();
     }
 
+    private void StartGame()
+    {
+        OnStartGame?.Invoke();
+    }
+
+    void OpenSetting()
+    {
+        settingMenu.Show();
+        mainMenuContainer.SetActive(false);
+    }
+
+    void OpenCredit()
+    {
+    }
     public void Show()
     {
         gameObject.SetActive(true);
@@ -27,19 +47,5 @@ public class HomeScreen : UIView, IMenu<UIContainer>
     {
         gameObject.SetActive(false);
     }
-
-    internal void ShowMenu<T>() where T : UIView
-    {
-        foreach (var menu in homeMenus)
-        {
-            if (menu is T)
-            {
-                menu.Show();
-            }
-            else
-            {
-                menu.Hide();
-            }
-        }
-    }
+    
 }

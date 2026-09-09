@@ -3,7 +3,7 @@ using UnityEngine;
 using Utils.Extensions;
 
 
-public abstract class UIPopup : UIView, IMenu<UIContainer>
+public abstract class UIPopup : UIView
 {
     [SerializeField] protected CanvasGroup panelGroup;
     [SerializeField] private HomeButton backButton;
@@ -12,7 +12,7 @@ public abstract class UIPopup : UIView, IMenu<UIContainer>
     {
         if (panelGroup == null) panelGroup = this.GetOrAddComponent<CanvasGroup>();
     }
-    public virtual void Setup(UIContainer owner)
+    public virtual void Setup(UIManager owner)
     {
         panelGroup.alpha = 0f;
         panelGroup.blocksRaycasts = false;

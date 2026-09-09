@@ -1,16 +1,14 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public interface IInteractable
 {
-    bool CanPerform();
+    Transform Transform { get; }
+    string PlayerAnimName { get; }
+    bool CanInteract();
     void Interact(InteractContext ctx);
-    void SetHighlighted(bool on);
 }
 
-public interface IEnvironment : IInteractable
-{
-    float Delay { get; }
-}
 
 public struct InteractContext
 {

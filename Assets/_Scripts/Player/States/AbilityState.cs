@@ -36,7 +36,7 @@ namespace HSM
         protected override State GetInitialState()
         {
             var root = (PlayerRoot)Parent;
-            return root.PendingInteractable is IItem ? InteractState : CutsceneState;
+            return player.TryGetInteractable<CutScene>(out _) ? CutsceneState : InteractState;
         }
 
         protected override State GetTransition() => isAbilityDone ? ((PlayerRoot)Parent).Locomotion : null;

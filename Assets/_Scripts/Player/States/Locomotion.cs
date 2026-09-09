@@ -6,9 +6,10 @@ namespace HSM
 {
     public class Locomotion : State
     {
+
         private readonly PlayerStateDriver player;
         private readonly PlayerData data;
-
+        
         private float currentSpeed;
         private float vel;
         private float targetSpeed;
@@ -58,7 +59,7 @@ namespace HSM
             if (Interaction.TryPressed(out var item))
             {
                 clickRequested = true;
-                ((PlayerRoot)Parent).PendingInteractable = item;
+                player.SetInteractable(item);
             }
         }
 

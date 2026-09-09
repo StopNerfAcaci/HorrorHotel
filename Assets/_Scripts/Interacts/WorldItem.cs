@@ -1,6 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-using Cysharp.Threading.Tasks;
+﻿using Cysharp.Threading.Tasks;
 using DG.Tweening;
 using UnityEngine;
 
@@ -21,16 +19,14 @@ public class WorldItem : MonoBehaviour, IItem
     private Color[] _originalColors;
     private MaterialPropertyBlock _mpb;
 
-
     private void Awake()
     {
         _collider = GetComponent<Collider>();
         _rigidbody = GetComponent<Rigidbody>();
         OnValidate();
-
         _mpb = new MaterialPropertyBlock();
     }
-    
+
     /// <summary>Call before picking up so we can restore state on cancel.</summary>
     public void CacheOriginalTransform()
     {
@@ -61,13 +57,13 @@ public class WorldItem : MonoBehaviour, IItem
     public void SetHighlighted(bool on)
     {
         var mode = outline.OutlineMode;
-        mode = on? Outline.Mode.OutlineVisible : Outline.Mode.OutlineHidden;
+        mode = on ? Outline.Mode.OutlineVisible : Outline.Mode.OutlineHidden;
         outline.OutlineMode = mode;
     }
 
     public Transform Transform => transform;
 
-    public async UniTask Use()
+    public async UniTask Confirm()
     {
         GlobalSettings.Inventory.Get().AddItem(itemData);
         transform.DOKill();
@@ -75,8 +71,10 @@ public class WorldItem : MonoBehaviour, IItem
         gameObject.SetActive(false);
     }
 
-    public bool CanPerform() => true;
-    
+    public bool IsCutScene => false;
+    public string PlayerAnimName => null;
+    public bool CanInteract() => true;
+
     public void Interact(InteractContext context)
     {
         CacheOriginalTransform();
@@ -85,10 +83,11 @@ public class WorldItem : MonoBehaviour, IItem
         transform.SetParent(context.NewTransform, worldPositionStays: false);
         transform.localPosition = context.Offset;
         transform.localRotation = Quaternion.identity;
+
     }
 
     private void OnValidate()
     {
-        if(outline == null) outline = GetComponent<Outline>();
+        if (outline == null) outline = GetComponent<Outline>();
     }
 }

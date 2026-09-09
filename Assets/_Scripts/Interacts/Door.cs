@@ -1,15 +1,20 @@
 using System;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 
-public class Door : MonoBehaviour, IEnvironment
+public class Door : MonoBehaviour, IInteractable
 {
     [SerializeField] private bool needKey;
     [SerializeField] private Animator _animator;
+    [SerializeField] private string sceneAnimName;
     private bool isToggleDoor = false;
     private static int OpenHash = Animator.StringToHash("Open");
     private static int CloseHash = Animator.StringToHash("Close");
 
     public float Delay => GetClipLength(_animator, "Open");
+    public bool IsCutScene => false;
+    public string PlayerAnimName => null;
+    public string SceneAnimName => sceneAnimName;
 
     private void Awake()
     {
@@ -17,8 +22,9 @@ public class Door : MonoBehaviour, IEnvironment
         // InvokeRepeating("ResetDoor", 5, 1);
     }
 
+    public ItemSO Item { get; }
     public Transform Transform => transform;
-    public bool CanPerform() => !needKey;
+    public bool CanInteract() => !needKey;
 
     public void Interact(InteractContext context)
     {
@@ -28,10 +34,14 @@ public class Door : MonoBehaviour, IEnvironment
             _animator.Play(OpenHash);
         }
     }
-
     public void SetHighlighted(bool on)
     {
         
+    }
+
+    public UniTask Confirm()
+    {
+        return UniTask.CompletedTask;
     }
 
     private void ResetDoor()

@@ -8,5 +8,12 @@ namespace Utils.Commons
         Defeated,
         Drown,
         Gravity
-    }    
+    }
+
+    public enum GlobalEventType
+    {
+        Dialogue,
+        Cutscene,
+        Ending
+    }
 }
